@@ -1,0 +1,22 @@
+.business-list-top {
+    color: $black;
+    background: rgba($green-white, .25);
+    border-bottom: .1em solid rgba($grey-blue, .5);
+}
+.yelp-courtesy {
+    @include adjust-font-size-to(10px);
+    color: $black;
+}
+.yelp-id {
+    @include adjust-font-size-to(10px);
+    color: $black;
+}
+.VBA40-yelp {
+    opacity: .5;
+}
+.shopping-list-item {
+    @extend %list-item-design;
+}
+.shopping-list-vitals {
+    @extend %list-vitals-design;
+}

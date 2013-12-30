@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+    <head>
+
+        <!-- Generic -->
+        <meta content="index, follow" name="robots"></meta>
+        <meta name="fragment" content="!" />
+
+        <!-- Devices -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+        <!-- For Chrome for Android Add To Homescreen-->
+        <meta name="mobile-web-app-capable" content="yes">
+
+        <!-- For Apple iOS Add To Homescreen-->
+        <meta name="apple-mobile-web-app-title" content="VT Beer Trail" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+        <!-- Facebook OpenGraph, Twitter Cards, SEO-->
+        <meta name="description" content="Find and Support Vermont's Amazing Craft Breweries and Their Communities" />
+        <meta property="twitter:title" content="Vermont Craft Beer Trail" />
+        <meta property="twitter:image" content="http://www.beertrail.vermontbrewers.com/icons/trail-sign.png" />
+        <meta property="twitter:url" content="http://www.beertrail.vermontbrewers.com" />
+        <meta property="twitter:description" content="Find and Support Vermont's Amazing Craft Breweries and Their Communities" />
+        <meta property="twitter:site" content="@VermontBrewers" />
+        <meta property="og:title" content="Vermont Craft Beer Trail" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="http://www.beertrail.vermontbrewers.com/icons/trail-sign.png" />
+        <meta property="og:url" content="http://www.beertrail.vermontbrewers.com" />
+        <meta property="og:description" content="Find and Support Vermont's Amazing Craft Breweries and Their Communities" />
+        <meta property="og:site_name" content="Vermont Craft Beer Trail" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="article:publisher" content="https://www.facebook.com/VermontBrewersAssociation" />
+
+        <title>VT Beer Trail</title>
+
+
+        <!-- For Chrome for Android and Apple Homescreen Icons -->
+        <link rel="shortcut icon" sizes="512x512" href="icons/trail-sign.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png">
+
+        <!-- build:css(.tmp) styles/main.css -->
+            <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+
+        <!-- In-line style for Loading Spinner -->
+        <style type="text/css">
+            @-webkit-keyframes spinner { from {-webkit-transform: rotate(0deg);} to {-webkit-transform: rotate(360deg);}   }
+            @-moz-keyframes rotate { from {-moz-transform: rotate(0deg);} to {-moz-transform: rotate(360deg);}   }
+            @keyframes rotate { from {transform: rotate(0deg);} to {transform: rotate(360deg);}   }
+            .spinning {height: 100px; width: 100px; margin: 100px auto; border: 2px solid rgba(104, 123, 54, 0.75); border-right: 0; border-bottom: 0; border-radius: 100px; transition: all 0.5s ease-in; -webkit-transition: all 0.5s ease-in; -moz-transition: all 0.5s ease-in; animation: spinner 1.5s infinite linear;           -webkit-animation: spinner 1.5s infinite linear; -moz-animation: spinner 1.5s infinite linear; -o-animation: spinner 1.5s infinite linear;}
+        </style>
+
+    </head>
+
+    <body ng-app="beerTrailApp" ng-controller="MainCtrl" >
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!--[if lt IE 9]>
+            <script src="bower_components/es5-shim/es5-shim.min.js"></script>
+            <script src="bower_components/json3/lib/json3.min.js"></script>
+        <![endif]-->
+
+        <nav nav-bar class="navbar">
+                <span back-button class="back-button" ></span>
+                <p class="heading">Vermont Craft Beer</p>
+                <a class="home-button" href="/" ></a>
+            </nav>
+
+        <main class="container" ng-view>
+
+            <!--++++++++++
+
+             Home View
+
+             ++++++++++-->
+            <script type="text/ng-template" id="home.html">
+                <article ng-controller="HomeCtrl" class="home">
+
+                    <section ng-if="loading">
+                        <div class="spinning"></div>
+                    </section>
+
+                    <section class="membersearch">
+                        <input type="text" id="brewersearch-input" placeholder="Instant Brewery Search" ng-model="memberSearch.name">
+                        <span data-icon="&#xe004;" class="search-img-font"></span>
+                    </section>
+
+                    <section class="homelist">
+                        <a class="brewer-list-item" ng-href="#/{{member.selector}}" ng-repeat="member in memberList  | filter:memberSearch" >
+                            <span class="member-img VBA40-{{member.selector}}"></span>
+                            <div class="member-list-vitals">
+                                <p>{{member.name}}</p>
+                                <p>{{member.city}}, {{member.state}}</p>
+                            </div>
+                        </a>
+                    </section>
+
+                </article> <!-- /.article -->
+            </script>
+
+            <!--++++++++++
+
+             Member View
+
+             ++++++++++-->
+            <script type="text/ng-template" id="memberview.html">
+                <article ng-controller="MemberViewCtrl" class="memberview">
+                    <section ng-if="loading">
+                        <div class="spinning"></div>
+                    </section>
+                    <span class="brewer-img VBA40-{{member.selector}}"></span>
+                    <p class="member-title">{{member.name}}</p>
+                    <a ng-href="#/{{member.selector}}/location" class="button-map" >Locate Brewery</a>
+                    <a ng-href="tel:{{member.phone}}" class="button-phone" >{{member.phone}}</a>
+                    <a ng-href="#/{{member.selector}}/shoppinglist" class="button-shopping" >Local Shopping</a>
+                    <a ng-href="#/{{member.selector}}/dininglist" class="button-dining" >Local Dining</a>
+                    <a ng-href="#/{{member.selector}}/weather" class="button-weather" >Local Weather</a>
+                    <p class="amazing">Find {{member.name}} at <span class="amazing-bold">{{member.address}}</span>, and explore Vermont in and around <span class="amazing-bold">{{member.city}}</span>.</p>
+                </article> <!-- /.article -->
+            </script>
+
+            <!--++++++++++
+
+              Member Map
+
+              ++++++++++-->
+            <script type="text/ng-template" id="membermap.html">
+                <article ng-controller="MemberMapCtrl" class="brewer-location-map">
+                    <address class="brewer-location-map-top">
+                            <span class="member-img VBA40-{{member.selector}}"></span>
+                            <section class="member-map-vitals">
+                                <h4>{{member.name}}</h4>
+                                <p>{{member.address}}, {{member.city}}</p>
+                            </section>
+                    </address>
+                    <section class="googlemap" member-map="{{member.latitude}},{{member.longitude}}"></section>
+                </article> <!-- /.article -->
+            </script>
+
+            <!--++++++++++
+
+             Shopping List
+
+             ++++++++++-->
+            <script type="text/ng-template" id="shoppinglist.html">
+                <article ng-controller="ShoppingListCtrl" >
+                    <section class="business-list-top">
+                        <p class="yelp-courtesy">Local Businesses Courtesy of:</p>
+                        <a ng-href="http://www.yelp.com" target="_blank" ><span class="VBA40-yelp"></span></a>
+                    </section>
+                    <section ng-if="loading">
+                        <div class="spinning"></div>
+                    </section>
+                    <section class="shopping-list">
+                        <a ng-href="#/{{member.selector}}/shoppinglist/{{shopping.id}}" class="shopping-list-item"  ng-repeat="shopping in shoppingList | orderBy: 'name' " >
+                            <img class="shopping-list-image" ng-src="{{shopping.photo_url}}" />
+                            <div class="shopping-list-vitals">
+                                <p>{{shopping.name}}</p>
+                                <p>{{shopping.address1}}</p>
+                                <p>{{shopping.city}}, {{shopping.state}}, {{shopping.zip}}</p>
+                                <p><img ng-src="{{shopping.rating_img_url_small}}" /> -from {{shopping.review_count}} Reviews(s)</p>
+                            </div>
+                        </a>
+                    </section>
+                </article> <!-- /.article -->
+            </script>
+
+            <!--++++++++++
+
+             Shopping Map
+
+             ++++++++++-->
+             <script type="text/ng-template" id="shoppingmap.html">
+                <article ng-controller="ShoppingMapCtrl">
+                    <section class="business-map-top">
+                        <a href="tel:{{shoppingmap.phone}}" class="business-phone-top">{{formattedPhone}}</a>
+                    </section>
+                    <section class="googlemap" business-map="{{shoppingmap.latitude}},{{shoppingmap.longitude}}"></section>
+                </article> <!-- /.article -->
+             </script>
+
+            <!--++++++++++
+
+             Dining List
+
+             ++++++++++-->
+            <script type="text/ng-template" id="dininglist.html">
+                <article ng-controller="DiningListCtrl" >
+                    <section class="business-list-top">
+                        <p class="yelp-courtesy">Local Dining Courtesy of:</p>
+                        <a ng-href="http://www.yelp.com" target="_blank" ><span class="VBA40-yelp"></span></a>
+                    </section>
+                    <section ng-if="loading">
+                        <div class="spinning"></div>
+                    </section>
+                    <section class="shopping-list">
+                        <a ng-href="#/{{member.selector}}/dininglist/{{dining.id}}" class="shopping-list-item"  ng-repeat="dining in diningList | orderBy: 'name' " >
+                            <img class="shopping-list-image" ng-src="{{dining.photo_url}}" />
+                            <div class="shopping-list-vitals">
+                                <p>{{dining.name}}</p>
+                                <p>{{dining.address1}}</p>
+                                <p>{{dining.city}}, {{dining.state}}, {{dining.zip}}</p>
+                                <p><img ng-src="{{dining.rating_img_url_small}}" /> -from {{dining.review_count}} Reviews(s)</p>
+                            </div>
+                        </a>
+                    </section>
+                </article> <!-- /.article -->
+            </script>
+
+            <!--++++++++++
+
+             Dining Map
+
+             ++++++++++-->
+             <script type="text/ng-template" id="diningmap.html">
+                <article ng-controller="DiningMapCtrl">
+                    <section class="business-map-top">
+                        <a href="tel:{{diningmap.phone}}" class="business-phone-top">{{formattedPhone}}</a>
+                    </section>
+                    <section class="googlemap" business-map="{{diningmap.latitude}},{{diningmap.longitude}}"></section>
+                </article> <!-- /.article -->
+             </script>
+
+        <!--++++++++++
+
+         Weather Page
+
+         ++++++++++-->
+        <script type="text/ng-template" id ="weather.html">
+            <article ng-controller="WeatherCtrl">
+                <section class="weather-attribution">
+                    <a href="http://www.forecast.io" target="_blank">Local Weather Courtesy of Forecast.io</a>
+                </section>
+                <section ng-if="loading">
+                    <div class="spinning"></div>
+                </section>
+                <section class="current-weather" ng-if="!loading">
+                    <h3>{{member.city}}, {{member.state}}</h3>
+                    <p id="{{weatherInfo.currently.icon}}" class="weather-description">{{weatherInfo.currently.summary}}: <span class="temperature">{{roundedTemp}}&#176;</span></p>
+                    <p class="weather-description">Feels Like: <span class="temperature">{{roundedApparentTemp}}&#176;</span></p>
+                    <p class="weather-description">Chance of Precipitation: {{precipPredict}}%</p>
+                    <h3>Forecast: Next Hour</h3>
+                    <p id="{{weatherInfo.hourly.icon}}" class="weather-description">{{weatherInfo.hourly.summary}}</p>
+                    <h3>Forecast: Next Day</h3>
+                    <p id="{{weatherInfo.daily.data[2].icon}}" class="weather-description">{{weatherInfo.daily.data[2].summary}} with high temperatures around <span class="temperature">{{roundedMaxTemp}}&#176;</span></p>
+                </section>
+
+            </article> <!-- /.article -->
+        </script>
+
+
+        </main> <!-- /main.container -->
+
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
+        <!-- build:js scripts/angular-modules.js -->
+            <script src="bower_components/angular-animate/angular-animate.js"></script>
+            <script src="bower_components/angular-route/angular-route.js"></script>
+            <script src="bower_components/angular-touch/angular-touch.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/angular-scripts.js -->
+            <script src="scripts/app.js"></script>
+
+            <script src="scripts/services/memberjson.js"></script>
+            <script src="scripts/services/storageservice.js"></script>
+
+            <script src="scripts/controllers/beertrail-main.js"></script>
+            <script src="scripts/controllers/home.js"></script>
+            <script src="scripts/controllers/memberview.js"></script>
+            <script src="scripts/controllers/membermap.js"></script>
+            <script src="scripts/controllers/shoppinglist.js"></script>
+            <script src="scripts/controllers/dininglist.js"></script>
+            <script src="scripts/controllers/weather.js"></script>
+            <script src="scripts/controllers/diningmap.js"></script>
+            <script src="scripts/controllers/shoppingmap.js"></script>
+
+            <script src="scripts/directives/backbutton.js"></script>
+            <script src="scripts/directives/membermap.js"></script>
+            <script src="scripts/directives/businessmap.js"></script>
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+        <script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-40551995-2']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+
+    </body>
+</html>

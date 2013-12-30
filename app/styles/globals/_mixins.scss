@@ -1,0 +1,154 @@
+//Mixins for search input
+@mixin input-placeholder($color) {
+  &.placeholder {
+    color: $color;
+    }
+    &::-moz-placeholder {
+      opacity: 1;
+      color: $color;
+  }
+    &::-webkit-input-placeholder {
+      color: $color;
+  }
+}
+
+@mixin input-placeholder-focus($focus-color) {
+  &.placeholder {
+    color: $focus-color;
+    }
+    &::-moz-placeholder {
+      opacity: 0;
+      color: $focus-color;
+  }
+    &::-webkit-input-placeholder {
+      color: $focus-color;
+  }
+}
+
+//Placeholder for lists - layout
+%list-layout {
+    padding-top: rhythm(4.5,16px);
+}
+%list-item-layout {
+    @include span-columns(12, 12);
+    @include pad(1,1);
+    margin-right: 0;
+}
+%list-image-layout {
+    @include span-columns(3,12);
+    margin: rhythm(.5,16px) 0;
+}
+%list-vitals-layout {
+    @include span-columns(9 omega, 12);
+    margin-top: rhythm(-.25, 16px);
+    p {
+        margin: 0;
+        padding: 0 0 0 $grid-padding;
+    }
+}
+
+//Placeholder for lists - design
+%list-item-design {
+    text-decoration: none;
+    background: $white;
+    color: $black;
+    border-bottom: .1em solid rgba($grey-blue, .5);
+    -webkit-tap-highlight-color:  rgba($grey-blue, .33);
+    p:last-of-type {
+        @include adjust-font-size-to(12px);
+        color: rgba($black,.75);
+    }
+    &:active {
+        background: rgba($grey-blue, .1);
+    }
+}
+%list-vitals-design {
+    text-align: left;
+    p {
+        @include adjust-font-size-to(12px);
+    }
+}
+
+//Placeholders for inner view button - layout
+%view-button-layout {
+    @include span-columns(12,12);
+    padding: rhythm(.75,16px) 0;
+    margin-right: 0;
+    &:before {
+        @include pad(1,2);
+    }
+    @include at-breakpoint($break-to-medium) {
+        @include span-columns(16, 16);
+        margin-right: 0;
+        &:before {
+            @include pad(0, 5);
+        }
+    }
+}
+
+//Placeholders for inner view button - design
+%view-button-design {
+    text-align: left;
+    @include adjust-font-size-to(18px);
+    color: $black;
+    text-decoration: none;
+    border-radius: .25em;
+    -webkit-tap-highlight-color:  rgba($grey-blue, .33);
+    border: .1em solid rgba(0,0,0, 0);
+    &:before {
+        color: rgba($green-dark, .75);
+    }
+    &:active {
+        background: rgba($grey-blue, .1);
+        border: .1em solid rgba($grey-blue, .5);
+        // border-left: .1em solid rgba($grey-blue, .5);
+        // border-right: .1em solid rgba($grey-blue, .5);
+    }
+}
+
+// Courtesy: http://jaydenseric.com/blog/fun-with-sass-and-font-icons
+$icons: (
+    'home' '\e000',
+    'phone' '\e001',
+    'map' '\e002',
+    'back' '\e003',
+    'weather' '\e005',
+    'shopping' '\e008',
+    'dining' '\e009'
+);
+@function match($haystack, $needle) {
+    @each $item in $haystack {
+        $index: index($item, $needle);
+        @if $index {
+            $return: if($index == 1, 2, $index);
+            @return nth($item, $return);
+        }
+    }
+    @return false;
+}
+@mixin icon($position: 'before', $styles: true, $icon: false) {
+    // Either a :before or :after pseudo-element, defaulting to :before
+    &:#{$position} {
+        @if $icon {
+            // Icon has been specified
+            content: match($icons, $icon);
+        }
+        @if $styles {
+            // Supportive icon styles have been specified
+            color: rgba($green-dark, .75);
+            font: {
+                style: normal;
+                variant: normal;
+                weight: normal;
+                family: $BeerTrail;
+            }
+            @include adjust-font-size-to(20px);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-transform: none;
+            speak: none;
+        }
+        // Include any extra rules supplied for the pseudo-element
+        @content;
+    }
+}

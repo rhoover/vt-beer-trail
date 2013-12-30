@@ -1,0 +1,29 @@
+.membersearch {
+    background: $white;
+    [data-icon]:before {
+        content: attr(data-icon);
+        font-family: $BeerTrail;
+        @include adjust-font-size-to(22px);
+        speak: none;
+        font-weight: bold;
+        font-variant: normal;
+        text-transform: none;
+        -webkit-font-smoothing: antialiased;
+        color: rgba($grey-blue, .75);
+    }
+}
+#brewersearch-input {
+    @include adjust-font-size-to(20px);
+    @include input-placeholder(rgba($grey-blue, .75));
+    background: transparent;
+    border-top: transparent;
+    border-style: solid;
+    border-color: rgba($grey-blue, .5);
+    border-width: 0 0 .1em 0;
+    @include box-shadow(rgba($grey, 0.25) 0 .25em .25em 0);
+    &:focus {
+        @include input-placeholder-focus(transparent);
+        outline: 0;
+        background: rgba($grey-blue, .10);
+    }
+}

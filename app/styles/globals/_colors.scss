@@ -1,0 +1,16 @@
+$yellow: rgb(190,170,119);
+$yellow-lite: lighten($yellow, 7%);
+
+$green: rgb(141,159,106);
+$green-dark: rgb(104,123,54);
+$green-light: lighten($green, 15%);
+$green-white: lighten($green, 40%);
+
+$grey: rgb(147,149,152);
+$grey-blue: rgb(82,126,144);
+
+$red: rgb(95,9,0);
+
+$black: darken($grey, 25%);
+
+$white: lighten($yellow, 38%);

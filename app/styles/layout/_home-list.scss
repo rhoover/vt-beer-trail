@@ -1,0 +1,15 @@
+.homelist {
+    @extend %list-layout;
+}
+.brewer-list-item {
+    @extend %list-item-layout;
+}
+.member-img {
+    @extend %list-image-layout;
+}
+.member-list-vitals {
+    @extend %list-vitals-layout;
+    p:first-of-type {
+        padding-top: rhythm(.35, 16px);
+    }
+}

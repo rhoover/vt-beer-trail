@@ -1,0 +1,32 @@
+.weather-attribution {
+    background: rgba($green-white, .25);
+    border-bottom: .1em solid rgba($grey-blue, .5);
+    text-align: center;
+    a {
+        text-decoration: none;
+        color: rgba($black, .65);
+        @include adjust-font-size-to(13px);
+        // @include icon('after', true, 'weather');
+        // &:after {
+        //     @include pad(1,0);
+        //     @include adjust-font-size-to(26px);
+        //  }
+    }
+}
+.current-weather {
+    text-align: center;
+    h3 {
+        color: rgba($grey-blue, .75);
+        @include adjust-font-size-to(14px);
+        font-weight: normal;
+        border-bottom: .1em solid rgba($grey-blue, .3);
+    }
+}
+.weather-description {
+    text-align: center;
+    color: $black;
+    @include adjust-font-size-to(14px);
+}
+.temperature {
+    @include adjust-font-size-to(19px);
+}

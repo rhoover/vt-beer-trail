@@ -1,0 +1,50 @@
+.memberview {
+    @include pad(1,1);
+    padding-top: rhythm(2, 16px);
+    @include at-breakpoint($break-to-medium) {
+        padding-top: rhythm(4, 16px);
+    }
+}
+.member-title {
+    @include span-columns(8 omega, 12);
+    @include at-breakpoint($break-to-medium) {
+        @include span-columns(10 omega, 16);
+    }
+}
+.brewer-img {
+    @include span-columns (3,12);
+    margin: rhythm(.5, 16px) 0;
+    @include at-breakpoint($break-to-medium) {
+        @include span-columns(6, 16);
+    }
+}
+.button-map {
+    @extend %view-button-layout;
+    @include at-breakpoint($break-to-medium) {
+        padding-top: rhythm(2, 16px);
+    }
+}
+.button-phone {
+    @extend %view-button-layout;
+}
+.button-shopping {
+    @extend %view-button-layout;
+}
+.button-dining {
+    @extend %view-button-layout;
+}
+.button-weather {
+    @extend %view-button-layout;
+}
+.amazing {
+    @include span-columns(12,12);
+    @include bleed(1);
+    padding-top: rhythm(.25, 16px);
+    padding-bottom: rhythm(.25, 16px);
+    @include at-breakpoint($break-to-medium) {
+        @include span-columns(16, 16);
+        margin-top: rhythm(1, 16px);
+        margin-right: 0;
+    }
+}
+

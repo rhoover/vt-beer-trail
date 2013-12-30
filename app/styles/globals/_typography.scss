@@ -1,0 +1,16 @@
+@include font-face('Fabrica', font-files(
+    'fabrica-webfont.woff',woff,
+    'fabrica-webfont.ttf', ttf,
+    'fabrica-webfont.svg', svg),
+    'fabrica-webfont.eot');
+    $Fabrica: 'Fabrica', arial, sans-serif;
+@include font-face('BeerTrail', font-files(
+    'BeerTrail.woff',woff,
+    'BeerTrail.ttf', ttf,
+    'BeerTrail.svg', svg),
+    'BeerTrail.eot');
+    $BeerTrail: 'BeerTrail', arial, sans-serif;
+
+    body {
+        font-family: $Fabrica;
+    }

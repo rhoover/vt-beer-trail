@@ -1,0 +1,10 @@
+.business-map-top {
+    @extend .business-list-top;
+}
+.business-phone-top {
+    @include span-columns(12,12);
+    margin: rhythm(2.5, 16px) 0 rhythm(.5, 16px) 0;
+    &:before {
+        padding-right: $grid-padding/2;
+    }
+}
