@@ -5,7 +5,7 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-/* line 22, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\0000322}}
 article,
 aside,
 details,
@@ -24,7 +24,7 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
-/* line 32, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\0000332}}
 audio,
 canvas,
 video {
@@ -35,7 +35,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 41, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\0000341}}
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -45,7 +45,7 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9.
  * Hide the `template` element in IE, Safari, and Firefox < 22.
  */
-/* line 52, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\0000352}}
 [hidden],
 template {
   display: none;
@@ -59,7 +59,7 @@ template {
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 66, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\0000366}}
 html {
   font-family: sans-serif;
   /* 1 */
@@ -72,7 +72,7 @@ html {
 /**
  * Remove default margin.
  */
-/* line 76, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\0000376}}
 body {
   margin: 0;
 }
@@ -83,7 +83,7 @@ body {
 /**
  * Remove the gray background color from active links in IE 10.
  */
-/* line 88, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\0000388}}
 a {
   background: transparent;
 }
@@ -91,7 +91,7 @@ a {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-/* line 96, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\0000396}}
 a:focus {
   outline: thin dotted;
 }
@@ -99,7 +99,7 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 105, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003105}}
 a:active,
 a:hover {
   outline: 0;
@@ -112,7 +112,7 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 118, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003118}}
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -121,7 +121,7 @@ h1 {
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
-/* line 127, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003127}}
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -129,7 +129,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 136, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003136}}
 b,
 strong {
   font-weight: bold;
@@ -138,7 +138,7 @@ strong {
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
-/* line 144, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003144}}
 dfn {
   font-style: italic;
 }
@@ -146,7 +146,7 @@ dfn {
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 152, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003152}}
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -156,7 +156,7 @@ hr {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 162, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003162}}
 mark {
   background: #ff0;
   color: #000;
@@ -165,7 +165,7 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 174, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003174}}
 code,
 kbd,
 pre,
@@ -177,7 +177,7 @@ samp {
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
-/* line 183, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003183}}
 pre {
   white-space: pre-wrap;
 }
@@ -185,7 +185,7 @@ pre {
 /**
  * Set consistent quote types.
  */
-/* line 191, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003191}}
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -193,7 +193,7 @@ q {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 199, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003199}}
 small {
   font-size: 80%;
 }
@@ -201,7 +201,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 208, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003208}}
 sub,
 sup {
   font-size: 75%;
@@ -210,12 +210,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 215, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003215}}
 sup {
   top: -0.5em;
 }
 
-/* line 219, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003219}}
 sub {
   bottom: -0.25em;
 }
@@ -226,7 +226,7 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9.
  */
-/* line 231, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003231}}
 img {
   border: 0;
 }
@@ -234,7 +234,7 @@ img {
 /**
  * Correct overflow displayed oddly in IE 9.
  */
-/* line 239, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003239}}
 svg:not(:root) {
   overflow: hidden;
 }
@@ -245,7 +245,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
-/* line 251, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003251}}
 figure {
   margin: 0;
 }
@@ -256,7 +256,7 @@ figure {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 263, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003263}}
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -267,7 +267,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 274, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003274}}
 legend {
   border: 0;
   /* 1 */
@@ -280,7 +280,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 288, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003288}}
 button,
 input,
 select,
@@ -297,7 +297,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 300, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003300}}
 button,
 input {
   line-height: normal;
@@ -309,7 +309,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 312, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003312}}
 button,
 select {
   text-transform: none;
@@ -322,7 +322,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 327, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003327}}
 button,
 html input[type="button"],
 input[type="reset"],
@@ -336,7 +336,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 337, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003337}}
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -346,7 +346,7 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-/* line 347, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003347}}
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -360,7 +360,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 358, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003358}}
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -374,7 +374,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 371, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003371}}
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -383,7 +383,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 380, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003380}}
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -394,7 +394,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 390, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003390}}
 textarea {
   overflow: auto;
   /* 1 */
@@ -408,7 +408,7 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-/* line 403, ../../app/styles/globals/_normalize.2.1.3.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_normalize\.2\.1\.3\.scss}line{font-family:\00003403}}
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -426,35 +426,35 @@ table {
   src: url('/styles/fonts/BeerTrail.eot?#iefix') format('eot'), url('/styles/fonts/BeerTrail.woff') format('woff'), url('/styles/fonts/BeerTrail.ttf') format('truetype'), url('/styles/fonts/BeerTrail.svg') format('svg');
 }
 
-/* line 14, ../../app/styles/globals/_typography.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_typography\.scss}line{font-family:\0000314}}
 body {
   font-family: "Fabrica", arial, sans-serif;
 }
 
-/* line 14, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/susy-1.0.9/sass/susy/_grid.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/susy-1\.0\.9\/sass\/susy\/_grid\.scss}line{font-family:\0000314}}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 61, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/_vertical_rhythm\.scss}line{font-family:\0000361}}
 * html {
   font-size: 100%;
 }
 
-/* line 64, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/_vertical_rhythm\.scss}line{font-family:\0000364}}
 html {
   font-size: 16px;
   line-height: 1.5em;
 }
 
-/* line 29, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\0000329}}
 .homelist, .shopping-list {
   padding-top: 6.75em;
 }
 
-/* line 32, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\0000332}}
 .brewer-list-item, .shopping-list-item {
   width: 100%;
   float: left;
@@ -464,7 +464,7 @@ html {
   margin-right: 0;
 }
 
-/* line 37, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\0000337}}
 .member-img, .shopping-list-image {
   width: 23.72881%;
   float: left;
@@ -472,20 +472,20 @@ html {
   margin: 0.75em 0;
 }
 
-/* line 41, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\0000341}}
 .member-list-vitals, .member-map-vitals, .shopping-list-vitals {
   width: 74.57627%;
   float: right;
   margin-right: 0;
   margin-top: -0.375em;
 }
-/* line 44, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\0000344}}
 .member-list-vitals p, .member-map-vitals p, .shopping-list-vitals p {
   margin: 0;
   padding: 0 0 0 1em;
 }
 
-/* line 51, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\0000351}}
 .brewer-list-item, .shopping-list-item {
   text-decoration: none;
   background: #fdfcfa;
@@ -493,28 +493,28 @@ html {
   border-bottom: 0.1em solid rgba(82, 126, 144, 0.5);
   -webkit-tap-highlight-color: rgba(82, 126, 144, 0.33);
 }
-/* line 57, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\0000357}}
 .brewer-list-item p:last-of-type, .shopping-list-item p:last-of-type {
   font-size: 0.75em;
   line-height: 2em;
   color: rgba(84, 85, 88, 0.75);
 }
-/* line 61, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\0000361}}
 .brewer-list-item:active, .shopping-list-item:active {
   background: rgba(82, 126, 144, 0.1);
 }
 
-/* line 65, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\0000365}}
 .shopping-list-vitals {
   text-align: left;
 }
-/* line 67, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\0000367}}
 .shopping-list-vitals p {
   font-size: 0.75em;
   line-height: 2em;
 }
 
-/* line 73, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\0000373}}
 .button-map, .button-phone, .button-shopping, .button-dining, .button-weather {
   width: 100%;
   float: left;
@@ -522,27 +522,27 @@ html {
   padding: 1.125em 0;
   margin-right: 0;
 }
-/* line 77, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\0000377}}
 .button-map:before, .button-phone:before, .button-shopping:before, .button-dining:before, .button-weather:before {
   padding-left: 8.47458%;
   padding-right: 16.94915%;
 }
 @media (min-width: 37.5em) {
-  /* line 73, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\0000373}}
   .button-map, .button-phone, .button-shopping, .button-dining, .button-weather {
     width: 100%;
     float: left;
     margin-right: 1.26582%;
     margin-right: 0;
   }
-  /* line 83, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\0000383}}
   .button-map:before, .button-phone:before, .button-shopping:before, .button-dining:before, .button-weather:before {
     padding-left: 0%;
     padding-right: 31.64557%;
   }
 }
 
-/* line 90, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\0000390}}
 .button-map, .button-phone, .button-shopping, .button-dining, .button-weather {
   text-align: left;
   font-size: 1.125em;
@@ -553,17 +553,17 @@ html {
   -webkit-tap-highlight-color: rgba(82, 126, 144, 0.33);
   border: 0.1em solid rgba(0, 0, 0, 0);
 }
-/* line 98, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\0000398}}
 .button-map:before, .button-phone:before, .button-shopping:before, .button-dining:before, .button-weather:before {
   color: rgba(104, 123, 54, 0.75);
 }
-/* line 101, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\00003101}}
 .button-map:active, .button-phone:active, .button-shopping:active, .button-dining:active, .button-weather:active {
   background: rgba(82, 126, 144, 0.1);
   border: 0.1em solid rgba(82, 126, 144, 0.5);
 }
 
-/* line 1, ../../app/styles/layout/_navbar.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_navbar\.scss}line{font-family:\000031}}
 .navbar {
   position: fixed;
   top: 0;
@@ -572,26 +572,26 @@ html {
   padding: 0 0.25em;
 }
 @media (min-width: 37.5em) {
-  /* line 1, ../../app/styles/layout/_navbar.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_navbar\.scss}line{font-family:\000031}}
   .navbar {
     padding-left: 6.32911%;
     padding-right: 6.32911%;
   }
 }
 
-/* line 11, ../../app/styles/layout/_navbar.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_navbar\.scss}line{font-family:\0000311}}
 .back-button, .home-button {
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%;
   margin: 0.3em 0 0 0;
 }
-/* line 14, ../../app/styles/layout/_navbar.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_navbar\.scss}line{font-family:\0000314}}
 .back-button:before, .home-button:before {
   padding: 0.675em 0.33333em;
 }
 @media (min-width: 37.5em) {
-  /* line 11, ../../app/styles/layout/_navbar.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_navbar\.scss}line{font-family:\0000311}}
   .back-button, .home-button {
     width: 5.06329%;
     float: left;
@@ -599,7 +599,7 @@ html {
   }
 }
 
-/* line 21, ../../app/styles/layout/_navbar.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_navbar\.scss}line{font-family:\0000321}}
 .heading {
   width: 66.10169%;
   float: left;
@@ -607,7 +607,7 @@ html {
   margin: 1.05em 0;
 }
 @media (min-width: 37.5em) {
-  /* line 21, ../../app/styles/layout/_navbar.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_navbar\.scss}line{font-family:\0000321}}
   .heading {
     width: 87.34177%;
     float: left;
@@ -615,19 +615,19 @@ html {
   }
 }
 
-/* line 28, ../../app/styles/layout/_navbar.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_navbar\.scss}line{font-family:\0000328}}
 .home-button {
   width: 15.25424%;
   float: right;
   margin-right: 0;
   margin: 0.3em 0 0 0;
 }
-/* line 31, ../../app/styles/layout/_navbar.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_navbar\.scss}line{font-family:\0000331}}
 .home-button:before {
   padding: 0.675em 0.33333em;
 }
 @media (min-width: 37.5em) {
-  /* line 28, ../../app/styles/layout/_navbar.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_navbar\.scss}line{font-family:\0000328}}
   .home-button {
     width: 5.06329%;
     float: right;
@@ -635,7 +635,7 @@ html {
   }
 }
 
-/* line 1, ../../app/styles/layout/_search.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_search\.scss}line{font-family:\000031}}
 .membersearch {
   position: fixed;
   top: 3.15em;
@@ -644,7 +644,7 @@ html {
   margin-right: 1.69492%;
 }
 @media (min-width: 37.5em) {
-  /* line 1, ../../app/styles/layout/_search.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_search\.scss}line{font-family:\000031}}
   .membersearch {
     width: 100%;
     float: left;
@@ -652,21 +652,21 @@ html {
   }
 }
 
-/* line 9, ../../app/styles/layout/_search.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_search\.scss}line{font-family:\000039}}
 #brewersearch-input {
   width: 100%;
   height: 2.25em;
   padding: 0 0 0 3em;
 }
 @media (min-width: 37.5em) {
-  /* line 9, ../../app/styles/layout/_search.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_search\.scss}line{font-family:\000039}}
   #brewersearch-input {
     padding-left: 12.65823%;
     padding-right: 0%;
   }
 }
 
-/* line 17, ../../app/styles/layout/_search.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_search\.scss}line{font-family:\0000317}}
 .search-img-font {
   width: 15.25424%;
   float: left;
@@ -675,7 +675,7 @@ html {
   margin-top: -2.55em;
 }
 @media (min-width: 37.5em) {
-  /* line 17, ../../app/styles/layout/_search.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_search\.scss}line{font-family:\0000317}}
   .search-img-font {
     width: 11.39241%;
     float: left;
@@ -683,7 +683,7 @@ html {
   }
 }
 
-/* line 1, ../../app/styles/layout/_container.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_container\.scss}line{font-family:\000031}}
 .container.ng-enter {
   -webkit-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -moz-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -693,7 +693,7 @@ html {
   width: 100%;
 }
 
-/* line 6, ../../app/styles/layout/_container.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_container\.scss}line{font-family:\000036}}
 .container.ng-leave {
   -webkit-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -moz-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -703,7 +703,7 @@ html {
   width: 100%;
 }
 
-/* line 12, ../../app/styles/layout/_container.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_container\.scss}line{font-family:\0000312}}
 .container.ng-enter {
   -webkit-transform: translate3d(-100%, 0, 0);
   -moz-transform: translate3d(-100%, 0, 0);
@@ -713,7 +713,7 @@ html {
   opacity: 0;
 }
 
-/* line 17, ../../app/styles/layout/_container.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_container\.scss}line{font-family:\0000317}}
 .container.ng-enter.ng-enter-active {
   -webkit-transform: translate3d(0%, 0, 0);
   -moz-transform: translate3d(0%, 0, 0);
@@ -727,7 +727,7 @@ html {
   opacity: 1;
 }
 
-/* line 23, ../../app/styles/layout/_container.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_container\.scss}line{font-family:\0000323}}
 .container.ng-leave {
   -webkit-transform: translate3d(0%, 0, 0);
   -moz-transform: translate3d(0%, 0, 0);
@@ -737,7 +737,7 @@ html {
   opacity: .6;
 }
 
-/* line 28, ../../app/styles/layout/_container.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_container\.scss}line{font-family:\0000328}}
 .container.ng-leave.ng-leave-active {
   -webkit-transform: translate3d(-100%, 0, 0);
   -moz-transform: translate3d(-100%, 0, 0);
@@ -747,32 +747,32 @@ html {
   opacity: 0;
 }
 
-/* line 12, ../../app/styles/layout/_home-list.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_home-list\.scss}line{font-family:\0000312}}
 .member-list-vitals p:first-of-type {
   padding-top: 0.525em;
 }
 
-/* line 1, ../../app/styles/layout/_memberview.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_memberview\.scss}line{font-family:\000031}}
 .memberview {
   padding-left: 8.47458%;
   padding-right: 8.47458%;
   padding-top: 3em;
 }
 @media (min-width: 37.5em) {
-  /* line 1, ../../app/styles/layout/_memberview.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_memberview\.scss}line{font-family:\000031}}
   .memberview {
     padding-top: 6em;
   }
 }
 
-/* line 8, ../../app/styles/layout/_memberview.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_memberview\.scss}line{font-family:\000038}}
 .member-title {
   width: 66.10169%;
   float: right;
   margin-right: 0;
 }
 @media (min-width: 37.5em) {
-  /* line 8, ../../app/styles/layout/_memberview.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_memberview\.scss}line{font-family:\000038}}
   .member-title {
     width: 62.02532%;
     float: right;
@@ -780,7 +780,7 @@ html {
   }
 }
 
-/* line 14, ../../app/styles/layout/_memberview.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_memberview\.scss}line{font-family:\0000314}}
 .brewer-img {
   width: 23.72881%;
   float: left;
@@ -788,7 +788,7 @@ html {
   margin: 0.75em 0;
 }
 @media (min-width: 37.5em) {
-  /* line 14, ../../app/styles/layout/_memberview.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_memberview\.scss}line{font-family:\0000314}}
   .brewer-img {
     width: 36.70886%;
     float: left;
@@ -797,13 +797,13 @@ html {
 }
 
 @media (min-width: 37.5em) {
-  /* line 21, ../../app/styles/layout/_memberview.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_memberview\.scss}line{font-family:\0000321}}
   .button-map {
     padding-top: 3em;
   }
 }
 
-/* line 39, ../../app/styles/layout/_memberview.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_memberview\.scss}line{font-family:\0000339}}
 .amazing {
   width: 100%;
   float: left;
@@ -819,7 +819,7 @@ html {
   padding-bottom: 0.375em;
 }
 @media (min-width: 37.5em) {
-  /* line 39, ../../app/styles/layout/_memberview.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_memberview\.scss}line{font-family:\0000339}}
   .amazing {
     width: 100%;
     float: left;
@@ -829,12 +829,12 @@ html {
   }
 }
 
-/* line 1, ../../app/styles/layout/_membermap.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_membermap\.scss}line{font-family:\000031}}
 .brewer-location-map {
   margin-top: 3.15em;
 }
 
-/* line 4, ../../app/styles/layout/_membermap.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_membermap\.scss}line{font-family:\000034}}
 .brewer-location-map-top {
   line-height: 3em;
   max-width: 61em;
@@ -843,32 +843,32 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 38, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
 .brewer-location-map-top:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 8, ../../app/styles/layout/_membermap.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_membermap\.scss}line{font-family:\000038}}
 .googlemap {
   display: block;
   min-height: 33em;
   width: 100%;
 }
 @media (min-width: 37.5em) {
-  /* line 8, ../../app/styles/layout/_membermap.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_membermap\.scss}line{font-family:\000038}}
   .googlemap {
     min-height: 67.5em;
   }
 }
 
-/* line 16, ../../app/styles/layout/_membermap.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_membermap\.scss}line{font-family:\0000316}}
 .member-map-vitals {
   margin-top: 0.375em;
 }
 
-/* line 1, ../../app/styles/layout/_local-list.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_local-list\.scss}line{font-family:\000031}}
 .business-list-top, .business-map-top {
   max-width: 61em;
   padding-left: 1em;
@@ -876,14 +876,14 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 38, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
 .business-list-top:after, .business-map-top:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 4, ../../app/styles/layout/_local-list.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_local-list\.scss}line{font-family:\000034}}
 .yelp-courtesy {
   width: 66.10169%;
   float: left;
@@ -892,7 +892,7 @@ html {
   margin-bottom: 0.375em;
 }
 
-/* line 9, ../../app/styles/layout/_local-list.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_local-list\.scss}line{font-family:\000039}}
 .VBA40-yelp {
   width: 32.20339%;
   float: right;
@@ -900,64 +900,64 @@ html {
   margin-top: 3.525em;
 }
 
-/* line 13, ../../app/styles/layout/_local-list.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_local-list\.scss}line{font-family:\0000313}}
 .shopping-list {
   padding-top: 1.5em;
 }
 
-/* line 17, ../../app/styles/layout/_local-list.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_local-list\.scss}line{font-family:\0000317}}
 .shopping-list-item {
   padding-bottom: 0.75em;
   padding-top: 0.75em;
 }
 
-/* line 22, ../../app/styles/layout/_local-list.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_local-list\.scss}line{font-family:\0000322}}
 .shopping-list-image {
   height: 65px;
   width: 65px;
   margin-top: 0;
 }
 
-/* line 30, ../../app/styles/layout/_local-list.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_local-list\.scss}line{font-family:\0000330}}
 .shopping-list-vitals p:first-of-type {
   margin-top: 0;
 }
 
-/* line 1, ../../app/styles/layout/_weather.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_weather\.scss}line{font-family:\000031}}
 .weather-attribution {
   margin-top: 3.3em;
   padding: 0.375em 0;
 }
 
-/* line 7, ../../app/styles/layout/_weather.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_weather\.scss}line{font-family:\000037}}
 .current-weather {
   padding-left: 8.47458%;
   padding-right: 8.47458%;
   padding-top: 0.375em;
 }
-/* line 11, ../../app/styles/layout/_weather.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_weather\.scss}line{font-family:\0000311}}
 .current-weather h3:not(:first-of-type) {
   margin-top: 3em;
 }
 
-/* line 4, ../../app/styles/layout/_business-map.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_business-map\.scss}line{font-family:\000034}}
 .business-phone-top {
   width: 100%;
   float: left;
   margin-right: 1.69492%;
   margin: 3.75em 0 0.75em 0;
 }
-/* line 7, ../../app/styles/layout/_business-map.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/layout\/_business-map\.scss}line{font-family:\000037}}
 .business-phone-top:before {
   padding-right: 0.5em;
 }
 
-/* line 1, ../../app/styles/design/_container.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_container\.scss}line{font-family:\000031}}
 .container {
   background: #fdfcfa;
 }
 
-/* line 1, ../../app/styles/design/_navbar.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_navbar\.scss}line{font-family:\000031}}
 .navbar {
   background: #fdfcfa;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(177, 189, 153, 0.06)), color-stop(100%, rgba(104, 123, 54, 0.12)));
@@ -969,7 +969,7 @@ html {
   color: rgba(84, 85, 88, 0.85);
 }
 
-/* line 7, ../../app/styles/design/_navbar.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_navbar\.scss}line{font-family:\000037}}
 .heading {
   text-align: center;
   font-size: 1.125em;
@@ -977,13 +977,13 @@ html {
   line-height: 0.75em;
 }
 
-/* line 12, ../../app/styles/design/_navbar.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_navbar\.scss}line{font-family:\0000312}}
 .back-button, .home-button {
   font-size: 1.375em;
   line-height: 1.63636em;
   -webkit-tap-highlight-color: rgba(44, 52, 23, 0.35);
 }
-/* line 131, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\00003131}}
 .back-button:before, .home-button:before {
   content: "\e003";
   color: rgba(104, 123, 54, 0.75);
@@ -998,13 +998,13 @@ html {
   text-transform: none;
   speak: none;
 }
-/* line 16, ../../app/styles/design/_navbar.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_navbar\.scss}line{font-family:\0000316}}
 .back-button:active, .home-button:active {
   background-color: rgba(44, 52, 23, 0.1);
   border-radius: .25em;
   border: 0.05em solid rgba(104, 123, 54, 0.85);
 }
-/* line 21, ../../app/styles/design/_navbar.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_navbar\.scss}line{font-family:\0000321}}
 .back-button:focus, .home-button:focus {
   outline: 0;
   background-color: rgba(44, 52, 23, 0.1);
@@ -1012,11 +1012,11 @@ html {
   border: 0.05em solid rgba(104, 123, 54, 0.85);
 }
 
-/* line 28, ../../app/styles/design/_navbar.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_navbar\.scss}line{font-family:\0000328}}
 .home-button {
   text-decoration: none;
 }
-/* line 131, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\00003131}}
 .home-button:before {
   content: "\e000";
   color: rgba(104, 123, 54, 0.75);
@@ -1032,11 +1032,11 @@ html {
   speak: none;
 }
 
-/* line 1, ../../app/styles/design/_search.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_search\.scss}line{font-family:\000031}}
 .membersearch {
   background: #fdfcfa;
 }
-/* line 3, ../../app/styles/design/_search.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_search\.scss}line{font-family:\000033}}
 .membersearch [data-icon]:before {
   content: attr(data-icon);
   font-family: "BeerTrail", arial, sans-serif;
@@ -1050,7 +1050,7 @@ html {
   color: rgba(82, 126, 144, 0.75);
 }
 
-/* line 15, ../../app/styles/design/_search.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_search\.scss}line{font-family:\0000315}}
 #brewersearch-input {
   font-size: 1.25em;
   line-height: 1.2em;
@@ -1063,273 +1063,273 @@ html {
   -moz-box-shadow: rgba(147, 149, 152, 0.25) 0 0.25em 0.25em 0;
   box-shadow: rgba(147, 149, 152, 0.25) 0 0.25em 0.25em 0;
 }
-/* line 3, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\000033}}
 #brewersearch-input.placeholder {
   color: rgba(82, 126, 144, 0.75);
 }
-/* line 6, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\000036}}
 #brewersearch-input::-moz-placeholder {
   opacity: 1;
   color: rgba(82, 126, 144, 0.75);
 }
-/* line 10, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\0000310}}
 #brewersearch-input::-webkit-input-placeholder {
   color: rgba(82, 126, 144, 0.75);
 }
-/* line 24, ../../app/styles/design/_search.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_search\.scss}line{font-family:\0000324}}
 #brewersearch-input:focus {
   outline: 0;
   background: rgba(82, 126, 144, 0.1);
 }
-/* line 16, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\0000316}}
 #brewersearch-input:focus.placeholder {
   color: transparent;
 }
-/* line 19, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\0000319}}
 #brewersearch-input:focus::-moz-placeholder {
   opacity: 0;
   color: transparent;
 }
-/* line 23, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\0000323}}
 #brewersearch-input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-/* line 290, VBA40/*.png */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/VBA40\/\*\.png}line{font-family:\00003290}}
 .VBA40-sprite, .VBA40-alchemist, .VBA40-backacrebeer, .VBA40-bobcat, .VBA40-coveredbridge, .VBA40-cropbistro, .VBA40-dropin, .VBA40-fiddlehead, .VBA40-foleybrothers, .VBA40-fourteenthstar, .VBA40-gratefulhands, .VBA40-harpoon, .VBA40-hillfarmstead, .VBA40-kingdombrewing, .VBA40-lawsons, .VBA40-longtrail, .VBA40-lostnationbrewing, .VBA40-madison, .VBA40-magichat, .VBA40-mcneills, .VBA40-northshire, .VBA40-norwichinn, .VBA40-ottercreek, .VBA40-perfectpear, .VBA40-rockart, .VBA40-switchback, .VBA40-threeneeds, .VBA40-trappfamily, .VBA40-troutriver, .VBA40-vpb, .VBA40-whetstonestation, .VBA40-yelp, .VBA40-zerogravity {
   background: url('/images/generated/VBA40-s760509856f.png') no-repeat;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-alchemist {
   background-position: 0 -743px;
   height: 40px;
   width: 40px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-backacrebeer {
   background-position: 0 -343px;
   height: 40px;
   width: 50px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-bobcat {
   background-position: 0 -783px;
   height: 40px;
   width: 40px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-coveredbridge {
   background-position: 0 -903px;
   height: 40px;
   width: 40px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-cropbistro {
   background-position: 0 -103px;
   height: 40px;
   width: 65px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-dropin {
   background-position: 0 -623px;
   height: 40px;
   width: 42px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-fiddlehead {
   background-position: 0 -25px;
   height: 38px;
   width: 40px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-foleybrothers {
   background-position: 0 -983px;
   height: 40px;
   width: 40px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-fourteenthstar {
   background-position: 0 -303px;
   height: 40px;
   width: 50px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-gratefulhands {
   background-position: 0 -943px;
   height: 40px;
   width: 40px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-harpoon {
   background-position: 0 -863px;
   height: 40px;
   width: 40px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-hillfarmstead {
   background-position: 0 -583px;
   height: 40px;
   width: 43px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-kingdombrewing {
   background-position: 0 -663px;
   height: 40px;
   width: 42px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-lawsons {
   background-position: 0 -63px;
   height: 40px;
   width: 66px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-longtrail {
   background-position: 0 -143px;
   height: 40px;
   width: 59px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-lostnationbrewing {
   background-position: 0 -1183px;
   height: 46px;
   width: 40px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-madison {
   background-position: 0 -703px;
   height: 40px;
   width: 40px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-magichat {
   background-position: 0 -223px;
   height: 40px;
   width: 54px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-mcneills {
   background-position: 0 -1229px;
   height: 53px;
   width: 40px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-northshire {
   background-position: 0 -383px;
   height: 40px;
   width: 48px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-norwichinn {
   background-position: 0 -423px;
   height: 40px;
   width: 45px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-ottercreek {
   background-position: 0 -1063px;
   height: 40px;
   width: 39px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-perfectpear {
   background-position: 0 -183px;
   height: 40px;
   width: 56px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-rockart {
   background-position: 0 -1143px;
   height: 40px;
   width: 34px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-switchback {
   background-position: 0 -503px;
   height: 40px;
   width: 45px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-threeneeds {
   background-position: 0 -1023px;
   height: 40px;
   width: 40px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-trappfamily {
   background-position: 0 -463px;
   height: 40px;
   width: 45px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-troutriver {
   background-position: 0 -1103px;
   height: 40px;
   width: 35px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-vpb {
   background-position: 0 -263px;
   height: 40px;
   width: 50px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-whetstonestation {
   background-position: 0 -823px;
   height: 40px;
   width: 40px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-yelp {
   background-position: 0 0;
   height: 25px;
   width: 49px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
 .VBA40-zerogravity {
   background-position: 0 -543px;
   height: 40px;
   width: 43px;
 }
 
-/* line 1, ../../app/styles/design/_memberview.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_memberview\.scss}line{font-family:\000031}}
 .member-title {
   font-weight: normal;
 }
 
-/* line 131, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\00003131}}
 .button-map:before {
   content: "\e002";
   color: rgba(104, 123, 54, 0.75);
@@ -1345,7 +1345,7 @@ html {
   speak: none;
 }
 
-/* line 131, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\00003131}}
 .button-phone:before {
   content: "\e001";
   color: rgba(104, 123, 54, 0.75);
@@ -1361,7 +1361,7 @@ html {
   speak: none;
 }
 
-/* line 131, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\00003131}}
 .button-shopping:before {
   content: "\e008";
   color: rgba(104, 123, 54, 0.75);
@@ -1377,7 +1377,7 @@ html {
   speak: none;
 }
 
-/* line 131, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\00003131}}
 .button-dining:before {
   content: "\e009";
   color: rgba(104, 123, 54, 0.75);
@@ -1393,7 +1393,7 @@ html {
   speak: none;
 }
 
-/* line 131, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\00003131}}
 .button-weather:before {
   content: "\e005";
   color: rgba(104, 123, 54, 0.75);
@@ -1409,7 +1409,7 @@ html {
   speak: none;
 }
 
-/* line 24, ../../app/styles/design/_memberview.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_memberview\.scss}line{font-family:\0000324}}
 .amazing {
   text-align: justify;
   font-size: 0.75em;
@@ -1418,14 +1418,14 @@ html {
   border-bottom: 0.1em solid rgba(104, 123, 54, 0.55);
 }
 
-/* line 30, ../../app/styles/design/_memberview.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_memberview\.scss}line{font-family:\0000330}}
 .amazing-bold {
   font-weight: bold;
   font-style: italic;
   color: rgba(104, 123, 54, 0.95);
 }
 
-/* line 1, ../../app/styles/design/_membermap.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_membermap\.scss}line{font-family:\000031}}
 .brewer-location-map-top {
   text-align: left;
   color: #545558;
@@ -1433,52 +1433,52 @@ html {
   border-bottom: 0.1em solid rgba(82, 126, 144, 0.5);
 }
 
-/* line 8, ../../app/styles/design/_membermap.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_membermap\.scss}line{font-family:\000038}}
 .member-map-vitals h4 {
   margin: 0.375em 0;
   line-height: 1.5em;
   font-weight: normal;
 }
-/* line 13, ../../app/styles/design/_membermap.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_membermap\.scss}line{font-family:\0000313}}
 .member-map-vitals p {
   font-size: 0.6875em;
   line-height: 2.18182em;
   padding-left: 0;
 }
 
-/* line 1, ../../app/styles/design/_local-list.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_local-list\.scss}line{font-family:\000031}}
 .business-list-top, .business-map-top {
   color: #545558;
   background: rgba(236, 239, 230, 0.25);
   border-bottom: 0.1em solid rgba(82, 126, 144, 0.5);
 }
 
-/* line 6, ../../app/styles/design/_local-list.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_local-list\.scss}line{font-family:\000036}}
 .yelp-courtesy {
   font-size: 0.625em;
   line-height: 2.4em;
   color: #545558;
 }
 
-/* line 10, ../../app/styles/design/_local-list.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_local-list\.scss}line{font-family:\0000310}}
 .yelp-id {
   font-size: 0.625em;
   line-height: 2.4em;
   color: #545558;
 }
 
-/* line 14, ../../app/styles/design/_local-list.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_local-list\.scss}line{font-family:\0000314}}
 .VBA40-yelp {
   opacity: .5;
 }
 
-/* line 1, ../../app/styles/design/_weather.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_weather\.scss}line{font-family:\000031}}
 .weather-attribution {
   background: rgba(236, 239, 230, 0.25);
   border-bottom: 0.1em solid rgba(82, 126, 144, 0.5);
   text-align: center;
 }
-/* line 5, ../../app/styles/design/_weather.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_weather\.scss}line{font-family:\000035}}
 .weather-attribution a {
   text-decoration: none;
   color: rgba(84, 85, 88, 0.65);
@@ -1486,11 +1486,11 @@ html {
   line-height: 1.84615em;
 }
 
-/* line 16, ../../app/styles/design/_weather.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_weather\.scss}line{font-family:\0000316}}
 .current-weather {
   text-align: center;
 }
-/* line 18, ../../app/styles/design/_weather.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_weather\.scss}line{font-family:\0000318}}
 .current-weather h3 {
   color: rgba(82, 126, 144, 0.75);
   font-size: 0.875em;
@@ -1499,7 +1499,7 @@ html {
   border-bottom: 0.1em solid rgba(82, 126, 144, 0.3);
 }
 
-/* line 25, ../../app/styles/design/_weather.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_weather\.scss}line{font-family:\0000325}}
 .weather-description {
   text-align: center;
   color: #545558;
@@ -1507,23 +1507,23 @@ html {
   line-height: 1.71429em;
 }
 
-/* line 30, ../../app/styles/design/_weather.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_weather\.scss}line{font-family:\0000330}}
 .temperature {
   font-size: 1.1875em;
   line-height: 1.26316em;
 }
 
-/* line 1, ../../app/styles/design/_business-map.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_business-map\.scss}line{font-family:\000031}}
 .business-map-top {
   text-align: center;
 }
 
-/* line 4, ../../app/styles/design/_business-map.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_business-map\.scss}line{font-family:\000034}}
 .business-phone-top {
   color: #545558;
   text-decoration: none;
 }
-/* line 131, ../../app/styles/globals/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/globals\/_mixins\.scss}line{font-family:\00003131}}
 .business-phone-top:before {
   content: "\e001";
   color: rgba(104, 123, 54, 0.75);
@@ -1538,7 +1538,7 @@ html {
   text-transform: none;
   speak: none;
 }
-/* line 8, ../../app/styles/design/_business-map.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/robin\/Sites\/Mobile\/BeerTrail\/app\/styles\/design\/_business-map\.scss}line{font-family:\000038}}
 .business-phone-top:before {
   font-size: 1.5625em;
   line-height: 1.44em;

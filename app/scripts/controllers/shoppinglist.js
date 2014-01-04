@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('beerTrailApp')
-    .controller('ShoppingListCtrl', ['$scope', '$http', '$routeParams', '$filter', 'memberjson', 'storageService',function ($scope, $http, $routeParams, $filter, memberjson, storageService) {
+    .controller('ShoppingListCtrl', ['$scope', '$http', '$routeParams', '$filter', 'memberjson', 'storageService', 'yelpKey', function ($scope, $http, $routeParams, $filter, memberjson, storageService, yelpKey) {
 
         $scope.$emit('LOADING');
 
@@ -33,7 +33,7 @@ angular.module('beerTrailApp')
                     '&lat=' + lat +
                     '&long=' + lon +
                     '&radius=5' +
-                    '&ywsid=KLXOkgumxK4bpwI4qEwm_w' +
+                    '&ywsid=' + yelpKey +
                     '&callback=JSON_CALLBACK';
                 $http.jsonp(url) //no angular native caching for jsonp, callback changes url each time
                     .success(function (shoppingData) {
