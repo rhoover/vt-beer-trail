@@ -10,6 +10,7 @@ angular.module('beerTrailApp')
 
             //get specific member stuff
             var member = ($filter('filter')(data, {selector: $routeParams.selector}))[0];
+            //publish
             $scope.member = member; //tied to member.selector in ng-href
 
             //config specific member stuff for yelp url
@@ -22,6 +23,7 @@ angular.module('beerTrailApp')
            var diningListCache = storageService.get(cacheKey);
 
            if (diningListCache != null) {
+                //publish
                 $scope.diningList = diningListCache.businesses;
 
                 $scope.$emit('LOADED');
