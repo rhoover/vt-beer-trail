@@ -1,13 +1,13 @@
 'use strict';
 
 angular.module('beerTrailApp')
-    .factory('diningService', ['$http', 'yelpKey', function ($http, yelpKey) {
+    .factory('shoppingService', ['$http', 'yelpKey', function ($http, yelpKey) {
         // Service logic
         var yelpUrl = 'https://api.yelp.com/business_review_search?' +
                 'limit=20' +
-                '&category=restaurants';
+                '&category=shopping+arts+active+localservices+localflavor+food+tours+auto';
 
-        var diningListRequest = function (lat, lon, yelpKey) {
+        var shoppingListRequest = function (lat, lon, yelpKey) {
             return $http({
                 method: 'JSONP',
                 url: yelpUrl +
@@ -19,8 +19,8 @@ angular.module('beerTrailApp')
         };
         // Public API here
         return {
-            dininglist: function (lat, lon) {
-                return diningListRequest(lat, lon, yelpKey);
+            shoppinglist: function (lat, lon) {
+                return shoppingListRequest(lat, lon, yelpKey);
             }
         };
     }]);

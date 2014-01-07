@@ -1,53 +1,76 @@
 'use strict';
 
 angular.module('beerTrailApp')
-    .controller('ShoppingListCtrl', ['$scope', '$http', '$routeParams', '$filter', 'memberjson', 'storageService', 'yelpKey', function ($scope, $http, $routeParams, $filter, memberjson, storageService, yelpKey) {
+    .controller('ShoppingListCtrl', ['$scope', '$routeParams', '$filter', 'memberjson', 'storageService', 'yelpKey', 'shoppingService', function ($scope, $routeParams, $filter, memberjson, storageService, yelpKey, shoppingService) {
 
         $scope.$emit('LOADING');
 
-        //below pattern is for a service that consumes a promise
-        memberjson.getMemberData().then(function (data) {
+        //see if we are already in app or not
+        var membershipListCache = storageService.get('vba-membership-cache');
 
-            //get specific member stuff
-            var member = ($filter('filter')(data, {selector: $routeParams.selector}))[0];
-            $scope.member = member;
+        //if we are
+        if (membershipListCache != null) {
 
-            //config specific member stuff for yelp url
+            var member = ($filter('filter')(membershipListCache, {selector: $routeParams.selector}))[0];
+            //publish
+            $scope.member = member; //a.k.a. member.selector in ng-href
+
+            //build stuff for shoppingService request
             var lat = member.latitude, lon = member.longitude;
-
-            //construct variables for storage service
-            var cacheSelector = member.selector, cacheKey = cacheSelector + '-' + 'shoppinglist-cache';
+            //build stuff for storageService request
+            var cacheSelector = member.selector;
+            var cacheKey = cacheSelector + '-' + 'shoppinglist-cache';
 
             //see if we have been here before
-           var shoppingListCache = storageService.get(cacheKey);
+            var shoppingListCache = storageService.get(cacheKey);
 
-           if (shoppingListCache != null) {
+            if (shoppingListCache != null) {
+                //publish
                 $scope.shoppingList = shoppingListCache.businesses;
-
                 $scope.$emit('LOADED');
-           } else {
+            } else {
+                shoppingService.shoppinglist(lat, lon)
+                .success(function (shoppingData) {
+                    //and publish
+                    $scope.shoppingList = shoppingData.businesses;
+                    $scope.$emit('LOADED');
 
-                var url = 'https://api.yelp.com/business_review_search?' +
-                    'limit=20' +
-                    '&category=shopping+arts+active+localservices+localflavor+food+tours+auto' +
-                    '&lat=' + lat +
-                    '&long=' + lon +
-                    '&radius=5' +
-                    '&ywsid=' + yelpKey +
-                    '&callback=JSON_CALLBACK';
-                $http.jsonp(url) //no angular native caching for jsonp, callback changes url each time
+                    //and save
+                    var saveMe = shoppingData;
+                    storageService.save(cacheKey, saveMe);
+                })
+                .error(function (shoppingData) {
+                    alert('Uh oh :(. Tap the back button and try again. Criminal really, but it seems someone somewhere mis-poured a beer, and now we\'re all paying the price.');
+                });
+            };
+        } else {
+            //so........ since we've never been here before, and by here I mean the app
+            memberjson.getMemberData().then(function (data) {
+
+                var member = ($filter('filter')(data, {selector: $routeParams.selector}))[0];
+
+                //publish
+                $scope.member = member; //tied to member.selector in ng-href
+
+                //build stuff for shoppingService request
+                var lat = member.latitude, lon = member.longitude;
+
+                //go get it!
+                shoppingService.shoppinglist(lat, lon)
                     .success(function (shoppingData) {
+                        //and publish
                         $scope.shoppingList = shoppingData.businesses;
-
                         $scope.$emit('LOADED');
 
+                        //and save...
+                        var cacheSelector = member.selector, cacheKey = cacheSelector + '-' + 'shoppinglist-cache';
                         var saveMe = shoppingData;
                         storageService.save(cacheKey, saveMe);
-                })
+                    })
                     .error(function (shoppingData) {
                         alert('Uh oh :(. Tap the back button and try again. Criminal really, but it seems someone somewhere mis-poured a beer, and now we\'re all paying the price.');
-                });
+                    });
+            });
 
-            } //end else
-        }); //end memberjson
+        }; //end if-else
     }]);
