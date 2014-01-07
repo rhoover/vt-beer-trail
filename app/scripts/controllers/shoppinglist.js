@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('beerTrailApp')
-    .controller('ShoppingListCtrl', ['$scope', '$routeParams', '$filter', 'memberjson', 'storageService', 'shoppingService', function ($scope, $routeParams, $filter, memberjson, storageService, shoppingService) {
+    .controller('ShoppingListCtrl', ['$scope', '$routeParams', '$filter', '$location', 'memberjson', 'storageService', 'shoppingService', 'analytics', function ($scope, $routeParams, $filter, $location, memberjson, storageService, shoppingService, analytics) {
 
         $scope.$emit('LOADING');
 
@@ -25,17 +25,20 @@ angular.module('beerTrailApp')
             var shoppingListCache = storageService.get(cacheKey);
 
             if (shoppingListCache != null) {
+
                 //publish
                 $scope.shoppingList = shoppingListCache.businesses;
                 $scope.$emit('LOADED');
             } else {
                 shoppingService.shoppinglist(lat, lon)
                 .success(function (shoppingData) {
+
                     //and publish
                     $scope.shoppingList = shoppingData.businesses;
                     $scope.$emit('LOADED');
 
                     //and save
+                    var cacheSelector = member.selector, cacheKey = cacheSelector + '-' + 'shoppinglist-cache';
                     var saveMe = shoppingData;
                     storageService.save(cacheKey, saveMe);
                 })
@@ -58,6 +61,7 @@ angular.module('beerTrailApp')
                 //go get it!
                 shoppingService.shoppinglist(lat, lon)
                     .success(function (shoppingData) {
+
                         //and publish
                         $scope.shoppingList = shoppingData.businesses;
                         $scope.$emit('LOADED');
@@ -73,4 +77,6 @@ angular.module('beerTrailApp')
             });
 
         }; //end if-else
+
+        analytics.logPageLoad($scope, $location.absUrl(), $location.path());
     }]);

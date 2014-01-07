@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('beerTrailApp')
-    .controller('ShoppingMapCtrl', ['$scope', '$routeParams', '$filter', 'storageService', function ($scope, $routeParams, $filter,  storageService) {
+    .controller('ShoppingMapCtrl', ['$scope', '$routeParams', '$filter', '$location', 'storageService', 'analytics', function ($scope, $routeParams, $filter,  $location, storageService, analytics) {
 
             $scope.$emit('LOADING');
 
@@ -21,5 +21,7 @@ angular.module('beerTrailApp')
             $scope.formattedPhone = '(' + phonenumber.substr(0,3) + ')' + phonenumber.substr(3,3) + '-' + phonenumber.substr(6,4);
 
             $scope.$emit('LOADED');
+
+            analytics.logPageLoad($scope, $location.absUrl(), $location.path());
 
     }]);

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('beerTrailApp')
-    .controller('HomeCtrl', ['$scope', 'memberjson', 'storageService', function ($scope, memberjson, storageService) {
+    .controller('HomeCtrl', ['$scope', '$location', 'memberjson', 'storageService', 'analytics', function ($scope, $location, memberjson, storageService, analytics) {
 
         $scope.$emit('LOADING');
 
@@ -26,4 +26,6 @@ angular.module('beerTrailApp')
 
             });
         }; //end if-else
+
+        analytics.logPageLoad($scope, $location.absUrl(), $location.path());
     }]);

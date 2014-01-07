@@ -274,6 +274,7 @@
 
             <script src="scripts/services/memberjson.js"></script>
             <script src="scripts/services/storageservice.js"></script>
+            <script src="scripts/services/analytics.js"></script>
             <script src="scripts/services/yelpkey.js"></script>
             <script src="scripts/services/forecastkey.js"></script>
             <script src="scripts/services/diningservice.js"></script>
@@ -295,11 +296,11 @@
             <script src="scripts/directives/businessmap.js"></script>
         <!-- endbuild -->
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID _gaq.push(['_trackPageview']); -->
         <script>
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-40551995-2']);
-            _gaq.push(['_trackPageview']);
+
             (function() {
             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';

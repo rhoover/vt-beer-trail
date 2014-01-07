@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('beerTrailApp')
-    .controller('MemberViewCtrl', ['$scope', '$routeParams', '$filter', 'memberjson', 'storageService', function ($scope, $routeParams, $filter, memberjson, storageService) {
+    .controller('MemberViewCtrl', ['$scope', '$routeParams', '$filter', '$location', 'memberjson', 'storageService', 'analytics', function ($scope, $routeParams, $filter, $location, memberjson, storageService, analytics) {
 
         $scope.$emit('LOADING');
 
@@ -26,4 +26,6 @@ angular.module('beerTrailApp')
 
             });
         }; //end if-else
+
+        analytics.logPageLoad($scope, $location.absUrl(), $location.path());
     }]);

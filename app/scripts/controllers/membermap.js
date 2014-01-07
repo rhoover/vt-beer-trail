@@ -1,12 +1,12 @@
 'use strict';
 
 angular.module('beerTrailApp')
-    .controller('MemberMapCtrl', ['$scope', '$routeParams', '$filter', 'memberjson', 'storageService', function ($scope, $routeParams, $filter, memberjson, storageService) {
+    .controller('MemberMapCtrl', ['$scope', '$routeParams', '$filter', '$location', 'memberjson', 'storageService', 'analytics', function ($scope, $routeParams, $filter, $location, memberjson, storageService, analytics) {
 
         $scope.$emit('LOADING');
 
         //see if we have been here before
-        var memberMapCache = storageService.get('membership');
+        var memberMapCache = storageService.get('vba-membership-cache');
         if (memberMapCache != null) {
                 var member = ($filter('filter')(memberMapCache, {selector: $routeParams.selector}))[0];
                 $scope.member = member;
@@ -22,8 +22,10 @@ angular.module('beerTrailApp')
                 $scope.$emit('LOADED');
 
                 var saveMe = data;
-                storageService.save('membership', saveMe);
+                storageService.save('vba-membership-cache', saveMe);
 
             });
         }; //end if-else
+
+        analytics.logPageLoad($scope, $location.absUrl(), $location.path());
     }]);

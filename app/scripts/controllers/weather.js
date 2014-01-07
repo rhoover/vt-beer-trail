@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('beerTrailApp')
-    .controller('WeatherCtrl', ['$scope', '$routeParams', '$filter', 'memberjson', 'storageService', 'weatherService', function ($scope, $routeParams, $filter, memberjson, storageService, weatherService) {
+    .controller('WeatherCtrl', ['$scope', '$routeParams', '$filter', '$location', 'memberjson', 'storageService', 'weatherService', 'analytics', function ($scope, $routeParams, $filter, $location, memberjson, storageService, weatherService, analytics) {
 
         $scope.$emit('LOADING');
 
@@ -110,4 +110,6 @@ angular.module('beerTrailApp')
 
             });
         };
+
+        analytics.logPageLoad($scope, $location.absUrl(), $location.path());
     }]);
