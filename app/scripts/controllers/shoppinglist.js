@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('beerTrailApp')
-    .controller('ShoppingListCtrl', ['$scope', '$routeParams', '$filter', 'memberjson', 'storageService', 'yelpKey', 'shoppingService', function ($scope, $routeParams, $filter, memberjson, storageService, yelpKey, shoppingService) {
+    .controller('ShoppingListCtrl', ['$scope', '$routeParams', '$filter', 'memberjson', 'storageService', 'shoppingService', function ($scope, $routeParams, $filter, memberjson, storageService, shoppingService) {
 
         $scope.$emit('LOADING');
 

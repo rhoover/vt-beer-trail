@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('beerTrailApp')
-    .controller('DiningListCtrl', ['$scope', '$routeParams', '$filter', 'memberjson', 'storageService', 'yelpKey', 'diningService', function ($scope, $routeParams, $filter, memberjson, storageService, yelpKey, diningService) {
+    .controller('DiningListCtrl', ['$scope', '$routeParams', '$filter', 'memberjson', 'storageService', 'diningService', function ($scope, $routeParams, $filter, memberjson, storageService, diningService) {
 
         $scope.$emit('LOADING');
 
@@ -30,20 +30,21 @@ angular.module('beerTrailApp')
                 $scope.$emit('LOADED');
             } else {
                 diningService.dininglist(lat, lon)
-                .success(function (diningData) {
-                    //and publish
-                    $scope.diningList = diningData.businesses;
-                    $scope.$emit('LOADED');
+                    .success(function (diningData) {
+                        //and publish
+                        $scope.diningList = diningData.businesses;
+                        $scope.$emit('LOADED');
 
-                    //and save
-                    var saveMe = diningData;
-                    storageService.save(cacheKey, saveMe);
-                })
-                .error(function (diningData) {
-                    alert('Uh oh :(. Tap the back button and try again. Criminal really, but it seems someone somewhere mis-poured a beer, and now we\'re all paying the price.');
-                });
+                        //and save
+                        var saveMe = diningData;
+                        storageService.save(cacheKey, saveMe);
+                    })
+                    .error(function (diningData) {
+                        alert('Uh oh :(. Tap the back button and try again. Criminal really, but it seems someone somewhere mis-poured a beer, and now we\'re all paying the price.');
+                    });
             };
         } else {
+
             //so........ since we've never been here before, and by here I mean the app
             memberjson.getMemberData().then(function (data) {
 

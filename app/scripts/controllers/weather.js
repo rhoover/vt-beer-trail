@@ -1,28 +1,32 @@
 'use strict';
 
 angular.module('beerTrailApp')
-    .controller('WeatherCtrl', ['$scope', '$http', '$routeParams', '$filter', 'memberjson', 'storageService', function ($scope, $http, $routeParams, $filter, memberjson, storageService) {
+    .controller('WeatherCtrl', ['$scope', '$routeParams', '$filter', 'memberjson', 'storageService', 'weatherService', function ($scope, $routeParams, $filter, memberjson, storageService, weatherService) {
 
         $scope.$emit('LOADING');
 
-        //below pattern is for a service that consumes a promise
-        memberjson.getMemberData().then(function (data) {
+        //see if we are already in app or not
+        var membershipListCache = storageService.get('vba-membership-cache');
 
-            //get specific member stuff
-            var member = ($filter('filter')(data, {selector: $routeParams.selector}))[0];
-            $scope.member = member;
+        //if we are
+        if (membershipListCache != null) {
 
-            //config specific member stuff for forecast url
+            var member = ($filter('filter')(membershipListCache, {selector: $routeParams.selector}))[0];
+            //publish
+            $scope.member = member; //a.k.a. member.selector in ng-href
+
+            //build stuff for weatherService request
             var lat = member.latitude, lon = member.longitude;
-
-            //construct variables for storage service
-            var cacheSelector = member.selector, storageCacheKey = cacheSelector + '-' + 'weather-cache';
+            //build stuff for storageService request
+            var cacheSelector = member.selector;
+            var cacheKey = cacheSelector + '-' + 'weather-cache';
 
             //see if we have been here before
-           var weatherCache = storageService.get(storageCacheKey);
+            var weatherCache = storageService.get(cacheKey);
 
             if (weatherCache != null) {
 
+                //publish
                 $scope.weatherInfo = weatherCache;
                 var heat = weatherCache.currently.temperature;
                 var apparentHeat = weatherCache.currently.apparentTemperature;
@@ -35,16 +39,11 @@ angular.module('beerTrailApp')
                 $scope.precipPredict = precipPredict;
 
                 $scope.$emit('LOADED');
-
             } else {
-
-                var url = 'https://api.forecast.io/forecast/' +
-                                'f8f2554ef4616c5fe690247824dfa8ad/' +
-                                lat+','+lon+
-                                '?callback=JSON_CALLBACK';
-
-                $http.jsonp(url)
+                weatherService.weatherinfo(lat, lon)
                     .success(function (weatherData) {
+
+                        //publish
                         $scope.weatherInfo = weatherData;
 
                         var heat = weatherData.currently.temperature;
@@ -59,14 +58,56 @@ angular.module('beerTrailApp')
 
                         $scope.$emit('LOADED');
 
+                        //and save
+                        var cacheSelector = member.selector, cacheKey = cacheSelector + '-' + 'weather-cache';
                         var saveMe = weatherData;
-                        storageService.save(storageCacheKey, saveMe);
+                        storageService.save(cacheKey, saveMe);
+                    })
+                    .error(function (weatherData) {
+                        alert("Rats! Looks like someone is trying to rain on your parade. Please try again!")
+                    });
+            };
+        } else {
 
+            //so....... since we've never been here before, and by here I mean the app
+            memberjson.getMemberData().then(function (data) {
+
+                var member = ($filter('filter')(data, {selector: $routeParams.selector}))[0];
+
+                //publish
+                $scope.member = member; //tied to member.selector in ng-href
+
+                //build stuff for weatherService request
+                var lat = member.latitude, lon = member.longitude;
+
+                //go get it!
+                weatherService.weatherinfo(lat, lon)
+                    .success(function (weatherData) {
+
+                        //publish
+                        $scope.weatherInfo = weatherData;
+
+                        var heat = weatherData.currently.temperature;
+                        var apparentHeat = weatherData.currently.apparentTemperature;
+                        var maxHeat = weatherData.daily.data[2].temperatureMax;
+                        var precipPredict = weatherData.currently.precipProbability*100;
+
+                        $scope.roundedTemp = Math.round(heat);
+                        $scope.roundedApparentTemp = Math.round(apparentHeat);
+                        $scope.roundedMaxTemp = Math.round(maxHeat);
+                        $scope.precipPredict = precipPredict;
+
+                        $scope.$emit('LOADED');
+
+                        //and save
+                        var cacheSelector = member.selector, cacheKey = cacheSelector + '-' + 'weather-cache';
+                        var saveMe = weatherData;
+                        storageService.save(cacheKey, saveMe);
                     })
                     .error(function (weatherData) {
                         alert("Rats! Looks like someone is trying to rain on your parade. Please try again!")
                     });
 
-            }; //end weather if-else
-        }); //end memberjson fetch
+            });
+        };
     }]);

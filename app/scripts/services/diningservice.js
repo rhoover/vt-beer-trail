@@ -2,6 +2,7 @@
 
 angular.module('beerTrailApp')
     .factory('diningService', ['$http', 'yelpKey', function ($http, yelpKey) {
+
         // Service logic
         var yelpUrl = 'https://api.yelp.com/business_review_search?' +
                 'limit=20' +
@@ -17,6 +18,7 @@ angular.module('beerTrailApp')
                     '&callback=JSON_CALLBACK'
             });
         };
+
         // Public API here
         return {
             dininglist: function (lat, lon) {
