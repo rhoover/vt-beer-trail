@@ -6,7 +6,7 @@ angular.module('beerTrailApp')
         $scope.$emit('LOADING');
 
         //see if we have been here before
-        var membershipListCache = storageService.get('membership');
+        var membershipListCache = storageService.get('vba-membership-cache');
         if (membershipListCache != null) {
             $scope.memberList = membershipListCache;
 
@@ -20,7 +20,7 @@ angular.module('beerTrailApp')
                 $scope.$emit('LOADED');
 
                 var saveMe = data;
-                storageService.save('membership', saveMe);
+                storageService.save('vba-membership-cache', saveMe);
 
             });
         }; //end if-else

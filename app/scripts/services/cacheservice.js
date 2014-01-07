@@ -1,7 +1,7 @@
 'use strict';
 
 // leaving this here for reference purposes
-//it is not being cat'd by Grunt build
+//it is not being cat'd by Grunt build as it is not listed in index.html
 angular.module('beerTrailApp')
     .factory('cacheService', ['$http', 'storageService', function ($http, storageService) {
         // Service logic
