@@ -1,12 +1,11 @@
 'use strict';
 
 angular.module('beerTrailApp')
-    .directive('businessMap', [function (   ) {
+    .directive('businessMap', ['$window', function ($window) {
 
         return {
             restrict: 'A',
             link: function (scope, element, attrs) {
-
 
                 attrs.$observe('businessMap', function () {
 
