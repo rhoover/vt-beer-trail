@@ -49,4 +49,5 @@ angular.module('beerTrailApp')
                 }); //end observe
             } //end link function
         }; //end return
+        analytics.logPageLoad($scope, $location.absUrl(), $location.path());
     }]);
