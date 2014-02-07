@@ -282,7 +282,8 @@ module.exports = function (grunt) {
             'images/{,*/}*.{gif,webp}',
             'icons/*',
             'data/*',
-            'styles/fonts/*'
+            'styles/fonts/*',
+            'startup-image.png'
           ]
         }, {
           expand: true,

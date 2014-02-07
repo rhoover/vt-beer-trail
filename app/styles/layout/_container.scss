@@ -3,11 +3,6 @@
   position: absolute;
   width: 100%;
 }
-.container.ng-leave {
-  @include transition(all .5s cubic-bezier(0.250, 0.460, 0.450, 0.940));
-  position: absolute;
-  width: 100%;
-}
 
 .container.ng-enter {
   @include translate3d(-100%, 0, 0);
@@ -23,6 +18,12 @@
 .container.ng-leave {
   @include translate3d(0%, 0,0);
   opacity: .6;
+}
+
+.container.ng-leave {
+  @include transition(all .5s cubic-bezier(0.250, 0.460, 0.450, 0.940));
+  position: absolute;
+  width: 100%;
 }
 
 .container.ng-leave.ng-leave-active {
