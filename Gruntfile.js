@@ -283,6 +283,7 @@ module.exports = function (grunt) {
             'bower_components/es5-shim/*.min.js',
             'bower_components/json3/*/*.min.js',
             'bower_components/angular/*.min.js',
+            'bower_components/fastclick/lib/fastclick.js',
             'images/{,*/}*.{gif,webp}',
             'icons/*',
             'data/*',

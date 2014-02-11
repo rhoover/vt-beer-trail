@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('beerTrailApp', ['ngRoute', 'ngAnimate', 'ngTouch'])
+angular.module('beerTrailApp', ['ngRoute', 'ngAnimate']) //, 'ngTouch'
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider
             .when('/', {
@@ -30,4 +30,7 @@ angular.module('beerTrailApp', ['ngRoute', 'ngAnimate', 'ngTouch'])
             .otherwise({
                 redirectTo: '/'
             });
-    }]);
+    }])
+    .run(function () {
+        FastClick.attach(document.body);
+    });

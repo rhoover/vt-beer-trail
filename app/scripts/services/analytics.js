@@ -15,8 +15,9 @@ angular.module('beerTrailApp')
                     //     $window._gaq.push(['_trackPageview', locationPath]);
                     //     console.log('tracked!');
                     // });
-                } else {
-                    console.log('URL not tracked:', locationPath);
+                //      else {
+                //     console.log('URL not tracked:', locationPath);
+                // }
                 };
             }
         };
