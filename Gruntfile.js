@@ -169,12 +169,16 @@ module.exports = function (grunt) {
         httpGeneratedImagesPath: '/images/generated',
         httpFontsPath: '/styles/fonts',
         require: 'susy',
-        relativeAssets: false
+        relativeAssets: false,
+        environment: 'production',
+        outputStyle: 'expanded',
+        debugInfo: false
       },
       dist: {},
       server: {
         options: {
-          debugInfo: true
+          debugInfo: false,
+          environment: 'production'
         }
       }
     },
