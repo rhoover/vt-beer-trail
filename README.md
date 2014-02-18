@@ -21,6 +21,7 @@ To Do for version 1.*
 
 * Fix Scroll Position bug on local business map view (exists for Chrome on Android, don't know about Safari/iOS)
 * (__DONE__) More AngularJS service providers for third-party GET and JSONP requests, aka modularize all the things
+* (__DONE__) Modularized $filter out of controllers
 * (__DONE Not Reasonable__)Examine reasonableness of moving data manipulation out of controllers and into directives
 * (__DONE__) Improve Google Analytics to track and report on URL changes
 * Track client-side load times

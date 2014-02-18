@@ -9,3 +9,7 @@
         @include adjust-font-size-to(25px);
     }
 }
+.business-name-top {
+    @include adjust-font-size-to(9px);
+    text-align: center;
+}

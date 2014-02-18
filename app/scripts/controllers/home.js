@@ -6,14 +6,16 @@ angular.module('beerTrailApp')
         $scope.$emit('LOADING');
 
         //see if we have been here before
-        var membershipListCache = storageService.get('vba-membership-cache');
+        var membershipCache = storageService.get('vba-membership-cache');
 
         //if we have...
-        if (membershipListCache != null) {
-            $scope.memberList = membershipListCache;
+        if (membershipCache != null) {
+            $scope.memberList = membershipCache;
 
             $scope.$emit('LOADED');
-        } else { //if we have not
+        } else {
+
+            //apparently we have not been here, so...
 
             //below pattern is for a service that returns a promise
             memberjson.getMemberData().then(function (data) {

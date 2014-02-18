@@ -166,7 +166,7 @@
                         <div class="spinning"></div>
                     </section>
                     <section class="shopping-list">
-                        <a ng-href="#/{{member.selector}}/shoppinglist/{{shopping.id}}" class="shopping-list-item"  ng-repeat="shopping in shoppingList | orderBy: 'name' " >
+                        <a ng-href="#/{{member.selector}}/shoppinglist/{{shopping.id}}" class="shopping-list-item"  ng-repeat="shopping in shoppingList | orderBy: '+name' " >
                             <img class="shopping-list-image" ng-src="{{shopping.photo_url}}" />
                             <div class="shopping-list-vitals">
                                 <p>{{shopping.name}}</p>
@@ -188,6 +188,7 @@
                 <article ng-controller="ShoppingMapCtrl">
                     <section class="business-map-top">
                         <a href="tel:{{shoppingmap.phone}}" class="business-phone-top">{{formattedPhone}}</a>
+                        <p class="business-name-top">{{shoppingmap.name}}</p>
                     </section>
                     <section class="googlemap" business-map="{{shoppingmap.latitude}},{{shoppingmap.longitude}}"></section>
                 </article> <!-- /.article -->
@@ -208,7 +209,7 @@
                         <div class="spinning"></div>
                     </section>
                     <section class="shopping-list">
-                        <a ng-href="#/{{member.selector}}/dininglist/{{dining.id}}" class="shopping-list-item"  ng-repeat="dining in diningList | orderBy: 'name' " >
+                        <a ng-href="#/{{member.selector}}/dininglist/{{dining.id}}" class="shopping-list-item"  ng-repeat="dining in diningList | orderBy:  '+name' ">
                             <img class="shopping-list-image" ng-src="{{dining.photo_url}}" />
                             <div class="shopping-list-vitals">
                                 <p>{{dining.name}}</p>
@@ -230,6 +231,7 @@
                 <article ng-controller="DiningMapCtrl">
                     <section class="business-map-top">
                         <a href="tel:{{diningmap.phone}}" class="business-phone-top">{{formattedPhone}}</a>
+                        <p class="business-name-top">{{diningmap.name}}</p>
                     </section>
                     <section class="googlemap" business-map="{{diningmap.latitude}},{{diningmap.longitude}}"></section>
                 </article> <!-- /.article -->
@@ -285,6 +287,8 @@
             <script src="scripts/services/diningservice.js"></script>
             <script src="scripts/services/shoppingservice.js"></script>
             <script src="scripts/services/weatherservice.js"></script>
+
+            <script src="scripts/filters/appdatafilter.js"></script>
 
             <script src="scripts/controllers/beertrail-main.js"></script>
             <script src="scripts/controllers/home.js"></script>

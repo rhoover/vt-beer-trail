@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('beerTrailApp')
-    .controller('ShoppingMapCtrl', ['$scope', '$routeParams', '$filter', '$location', 'storageService', 'analytics', function ($scope, $routeParams, $filter,  $location, storageService, analytics) {
+    .controller('ShoppingMapCtrl', ['$scope', '$routeParams', '$location', 'storageService', 'analytics', 'appdataFilter', function ($scope, $routeParams, $location, storageService, analytics, appdataFilter) {
 
             $scope.$emit('LOADING');
 
@@ -10,10 +10,12 @@ angular.module('beerTrailApp')
             var cacheKey = member + '-' + 'shoppinglist-cache';
 
             //get specified cache
-            var gotCache = storageService.get(cacheKey);
+            var gotCache = storageService.get(cacheKey).businesses;
 
             //filter for this particular business
-            var gotBusiness = ($filter('filter')(gotCache.businesses, {id: $routeParams.id}))[0];
+            var businessId = {id: $routeParams.id};
+            var gotBusiness = appdataFilter.business(gotCache, businessId);
+            // var gotBusiness = ($filter('filter')(gotCache.businesses, {id: $routeParams.id}))[0];
 
             //publish
             var phonenumber = gotBusiness.phone;

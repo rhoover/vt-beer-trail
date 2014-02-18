@@ -1,22 +1,27 @@
 'use strict';
 
 angular.module('beerTrailApp')
-    .controller('WeatherCtrl', ['$scope', '$routeParams', '$filter', '$location', 'memberjson', 'storageService', 'weatherService', 'analytics', function ($scope, $routeParams, $filter, $location, memberjson, storageService, weatherService, analytics) {
+    .controller('WeatherCtrl', ['$scope', '$routeParams', '$location', 'memberjson', 'storageService', 'weatherService', 'analytics', 'appdataFilter', function ($scope, $routeParams, $location, memberjson, storageService, weatherService, analytics, appdataFilter) {
 
         $scope.$emit('LOADING');
 
         //see if we are already in app or not
-        var membershipListCache = storageService.get('vba-membership-cache');
+        var membershipCache = storageService.get('vba-membership-cache');
 
         //if we are
-        if (membershipListCache != null) {
+        if (membershipCache != null) {
 
-            var member = ($filter('filter')(membershipListCache, {selector: $routeParams.selector}))[0];
+            // var member = ($filter('filter')(membershipCache, {selector: $routeParams.selector}))[0];
+            // $scope.member = member; //a.k.a. member.selector in ng-href
+
             //publish
-            $scope.member = member; //a.k.a. member.selector in ng-href
+            var memberSelector = {selector: $routeParams.selector};
+            var member = appdataFilter.member(membershipCache, memberSelector);
+            $scope.member = member;
 
             //build stuff for weatherService request
             var lat = member.latitude, lon = member.longitude;
+
             //build stuff for storageService request
             var cacheSelector = member.selector;
             var cacheKey = cacheSelector + '-' + 'weather-cache';
@@ -28,6 +33,7 @@ angular.module('beerTrailApp')
 
                 //publish
                 $scope.weatherInfo = weatherCache;
+
                 var heat = weatherCache.currently.temperature;
                 var apparentHeat = weatherCache.currently.apparentTemperature;
                 var maxHeat = weatherCache.daily.data[2].temperatureMax;
@@ -43,7 +49,7 @@ angular.module('beerTrailApp')
                 weatherService.weatherinfo(lat, lon)
                     .success(function (weatherData) {
 
-                        //publish
+                        //and publish
                         $scope.weatherInfo = weatherData;
 
                         var heat = weatherData.currently.temperature;
@@ -72,10 +78,13 @@ angular.module('beerTrailApp')
             //so....... since we've never been here before, and by here I mean the app
             memberjson.getMemberData().then(function (data) {
 
-                var member = ($filter('filter')(data, {selector: $routeParams.selector}))[0];
+                // var member = ($filter('filter')(data, {selector: $routeParams.selector}))[0];
+                // $scope.member = member; //tied to member.selector in ng-href
 
                 //publish
-                $scope.member = member; //tied to member.selector in ng-href
+                var memberSelector = {selector: $routeParams.selector};
+                var member = appdataFilter.member(membershipCache, memberSelector);
+                $scope.member = member;
 
                 //build stuff for weatherService request
                 var lat = member.latitude, lon = member.longitude;
@@ -84,7 +93,7 @@ angular.module('beerTrailApp')
                 weatherService.weatherinfo(lat, lon)
                     .success(function (weatherData) {
 
-                        //publish
+                        //and publish
                         $scope.weatherInfo = weatherData;
 
                         var heat = weatherData.currently.temperature;

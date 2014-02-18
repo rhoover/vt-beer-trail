@@ -836,7 +836,7 @@ html {
   width: 100%;
   float: left;
   margin-right: 1.69492%;
-  margin: 3.75em 0 0.75em 0;
+  margin: 3em 0 0 0;
 }
 .business-phone-top:before {
   padding-right: 0.5em;
@@ -1355,4 +1355,10 @@ html {
 .business-phone-top:before {
   font-size: 1.5625em;
   line-height: 1.44em;
+}
+
+.business-name-top {
+  font-size: 0.5625em;
+  line-height: 2.66667em;
+  text-align: center;
 }
