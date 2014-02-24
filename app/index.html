@@ -165,14 +165,22 @@
                     <section ng-if="loading">
                         <div class="spinning"></div>
                     </section>
-                    <section class="shopping-list">
-                        <a ng-href="#/{{member.selector}}/shoppinglist/{{shopping.id}}" class="shopping-list-item"  ng-repeat="shopping in shoppingList | orderBy: '+name' " >
-                            <img class="shopping-list-image" ng-src="{{shopping.photo_url}}" />
-                            <div class="shopping-list-vitals">
+                    <section class="local-list">
+                        <a ng-href="#/{{member.selector}}/shoppinglist/{{shopping.id}}" class="local-list-item"  ng-repeat="shopping in shoppingList | orderBy: '+name' " >
+                            <img class="local-list-image" ng-src="{{shopping.photo_url}}" />
+                            <div class="local-list-vitals">
                                 <p>{{shopping.name}}</p>
                                 <p>{{shopping.address1}}</p>
                                 <p>{{shopping.city}}, {{shopping.state}}, {{shopping.zip}}</p>
-                                <p><img ng-src="{{shopping.rating_img_url_small}}" /> -from {{shopping.review_count}} Reviews(s)</p>
+<!--                           <img ng-src="{{shopping.rating_img_url_small}}" /> -from {{shopping.review_count}} Reviews(s) -->
+                                <p class="rating" data-rating="{{shopping.avg_rating}}">
+                                    <i class="star-1">★</i>
+                                    <i class="star-2">★</i>
+                                    <i class="star-3">★</i>
+                                    <i class="star-4">★</i>
+                                    <i class="star-5">★</i>
+                                    <span>   -from {{shopping.review_count}} Reviews(s)</span>
+                                </p>
                             </div>
                         </a>
                     </section>
@@ -208,14 +216,22 @@
                     <section ng-if="loading">
                         <div class="spinning"></div>
                     </section>
-                    <section class="shopping-list">
-                        <a ng-href="#/{{member.selector}}/dininglist/{{dining.id}}" class="shopping-list-item"  ng-repeat="dining in diningList | orderBy:  '+name' ">
-                            <img class="shopping-list-image" ng-src="{{dining.photo_url}}" />
-                            <div class="shopping-list-vitals">
+                    <section class="local-list">
+                        <a ng-href="#/{{member.selector}}/dininglist/{{dining.id}}" class="local-list-item"  ng-repeat="dining in diningList | orderBy:  '+name' ">
+                            <img class="local-list-image" ng-src="{{dining.photo_url}}" />
+                            <div class="local-list-vitals">
                                 <p>{{dining.name}}</p>
                                 <p>{{dining.address1}}</p>
                                 <p>{{dining.city}}, {{dining.state}}, {{dining.zip}}</p>
-                                <p><img ng-src="{{dining.rating_img_url_small}}" /> -from {{dining.review_count}} Reviews(s)</p>
+                                <!-- <p><img ng-src="{{dining.rating_img_url_small}}" /> -from {{dining.review_count}} Reviews(s)</p> -->
+                                <p class="rating" data-rating="{{dining.avg_rating}}">
+                                    <i class="star-1">★</i>
+                                    <i class="star-2">★</i>
+                                    <i class="star-3">★</i>
+                                    <i class="star-4">★</i>
+                                    <i class="star-5">★</i>
+                                    <span>   -from {{dining.review_count}} Reviews(s)</span>
+                                </p>
                             </div>
                         </a>
                     </section>

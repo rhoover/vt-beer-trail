@@ -10,22 +10,22 @@
     @include span-columns(4 omega,12);
     margin-top: rhythm(2.35, 16px);
 }
-.shopping-list {
+.local-list {
     @extend %list-layout;
     padding-top: rhythm(1,16px);
 }
-.shopping-list-item {
+.local-list-item {
     @extend %list-item-layout;
     padding-bottom: rhythm(.5, 16px);
     padding-top: rhythm(.5, 16px);
 }
-.shopping-list-image {
+.local-list-image {
     @extend %list-image-layout;
     height: 65px;
     width: 65px;
     margin-top: 0;
 }
-.shopping-list-vitals {
+.local-list-vitals {
     @extend %list-vitals-layout;
     p:first-of-type {
         margin-top: 0;
