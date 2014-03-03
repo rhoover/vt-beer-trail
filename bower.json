@@ -2,13 +2,17 @@
   "name": "beerTrail",
   "version": "0.0.0",
   "dependencies": {
-    "angular": "1.2.5",
-    "json3": "3.2.6",
-    "es5-shim": "2.1.0",
-    "angular-mocks": "1.2.5",
-    "angular-scenario": "1.2.5",
-    "angular-animate": "1.2.5",
-    "angular-route": "1.2.5",
-    "fastclick": "~0.6.11"
+    "angular": "1.2.15-build.2364+sha.7c34e1f",
+    "json3": "3.3.0",
+    "es5-shim": "2.3.0",
+    "angular-mocks": "1.2.15-build.2364+sha.7c34e1f",
+    "angular-scenario": "1.2.15-build.2364+sha.7c34e1f",
+    "angular-animate": "1.2.15-build.2364+sha.7c34e1f",
+    "angular-route": "1.2.15-build.2364+sha.7c34e1f",
+    "fastclick": "1.0.0"
+  },
+  "resolutions": {
+    "angular": "1.2.15-build.2364+sha.7c34e1f",
+    "angular-scenario": "1.2.15-build.2364+sha.7c34e1f"
   }
 }
