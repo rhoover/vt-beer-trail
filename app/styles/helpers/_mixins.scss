@@ -1,0 +1,26 @@
+//Mixins for search input
+@mixin input-placeholder($color) {
+  &.placeholder {
+    color: $color;
+    }
+    &::-moz-placeholder {
+      opacity: 1;
+      color: $color;
+  }
+    &::-webkit-input-placeholder {
+      color: $color;
+  }
+}
+
+@mixin input-placeholder-focus($focus-color) {
+  &.placeholder {
+    color: $focus-color;
+    }
+    &::-moz-placeholder {
+      opacity: 0;
+      color: $focus-color;
+  }
+    &::-webkit-input-placeholder {
+      color: $focus-color;
+  }
+}

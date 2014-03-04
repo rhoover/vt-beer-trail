@@ -1,0 +1,96 @@
+//Placeholder for navigation buttons
+%nav-buttons {
+    @include adjust-font-size-to(22px);
+    margin-top: rhythm(.3, 16px);
+    -webkit-tap-highlight-color: rgba(darken($green-dark, 20%), .35);
+    text-decoration: none;
+    &:active {
+        background-color: rgba(darken($green-dark, 20%), .10);
+        border-radius: .25em;
+        border: .05em solid rgba($green-dark, .85);
+    }
+    &:focus {
+        outline:  0;
+        background-color: rgba(darken($green-dark, 20%), .10);
+        border-radius: .25em;
+        border: .05em solid rgba($green-dark, .85);
+    }
+}
+
+//Placeholder for lists
+%list {
+    padding-top: rhythm(4.5,16px);
+}
+%list-item {
+    @include span-columns(12, 12);
+    @include pad(1,1);
+    margin-right: 0;
+    text-decoration: none;
+    background: $white;
+    color: $black;
+    border-bottom: .1em solid rgba($grey-blue, .5);
+    -webkit-tap-highlight-color:  rgba($grey-blue, .33);
+    &:active {
+        background: rgba($grey-blue, .1);
+    }
+}
+%list-image {
+    @include span-columns(3,12);
+    margin: rhythm(.5,16px) 0;
+}
+%list-vitals {
+    @include span-columns(9 omega, 12);
+    padding-top: rhythm(.2, 16px);
+    text-align: left;
+    p {
+        margin: 0;
+        padding: 0 0 0 $grid-padding;
+        @include adjust-font-size-to(14px);
+    }
+    p:first-of-type {
+        padding-top: rhythm(.35, 16px);
+    }
+    p:last-of-type {
+        @include adjust-font-size-to(12px);
+        color: rgba($black,.75);
+    }
+}
+
+//Placeholder for member-view 'buttons'
+%member-view-button {
+    @include span-columns(12,12);
+    padding: rhythm(.5,16px) 0 rhythm(.5,16px) $grid-padding;
+    margin-right: 0;
+    &:before {
+        @include pad(1,2);
+    }
+    @include at-breakpoint($break-to-medium) {
+        @include span-columns(16, 16);
+        margin-right: 0;
+        &:before {
+            @include pad(0, 5);
+        }
+    }
+    text-align: left;
+    @include adjust-font-size-to(18px);
+    color: $black;
+    text-decoration: none;
+    border-radius: .25em;
+    -webkit-tap-highlight-color:  rgba($grey-blue, .33);
+    border: .1em solid rgba(0,0,0, 0);
+    &:before {
+        color: rgba($green-dark, .75);
+    }
+    &:active {
+        background: rgba($grey-blue, .1);
+        border: .1em solid rgba($grey-blue, .5);
+    }
+}
+
+//Placeholder for local business list header
+%business-list-header {
+    @include container;
+    color: $black;
+    background: rgba($green-white, .25);
+    border-bottom: .1em solid rgba($grey-blue, .5);
+}

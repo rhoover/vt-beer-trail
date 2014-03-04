@@ -1,0 +1,66 @@
+.memberview {
+    @include pad(1,1);
+    padding-top: rhythm(4, 16px);
+    @include at-breakpoint($break-to-medium) {
+        padding-top: rhythm(4, 16px);
+    }
+}
+.member-title {
+    @include span-columns(8 omega, 12);
+    @include at-breakpoint($break-to-medium) {
+        @include span-columns(10 omega, 16);
+    }
+    margin-bottom: rhythm(1, 16px) 0;
+    font-weight: normal;
+}
+.brewer-img {
+    @include span-columns (3,12);
+    margin-bottom: rhythm(1, 16px) 0;
+    @include at-breakpoint($break-to-medium) {
+        @include span-columns(6, 16);
+    }
+}
+.button-map {
+    @extend %member-view-button;
+    @include at-breakpoint($break-to-medium) {
+        padding-top: rhythm(2, 16px);
+    }
+    @include icon('before', true, 'map');
+}
+.button-phone {
+    @extend %member-view-button;
+    @include icon('before', true, 'phone');
+}
+.button-shopping {
+    @extend %member-view-button;
+    @include icon('before', true, 'shopping');
+}
+.button-dining {
+    @extend %member-view-button;
+    @include icon('before', true, 'dining');
+}
+.button-weather {
+    @extend %member-view-button;
+    @include icon('before', true, 'weather');
+}
+.amazing {
+    @include span-columns(12,12);
+    @include bleed(1);
+    padding-top: rhythm(.25, 16px);
+    padding-bottom: rhythm(.25, 16px);
+    margin-top: rhythm(2, 16px);
+    @include at-breakpoint($break-to-medium) {
+        @include span-columns(16, 16);
+        margin: rhythm(1, 16px) 0 0 0;
+    }
+    text-align: justify;
+    @include adjust-font-size-to(12px);
+    border-top: .1em solid rgba($green-dark, .55);
+    border-bottom: .1em solid rgba($green-dark, .55);
+}
+.amazing-bold {
+    font-weight: bold;
+    font-style: italic;
+    color: rgba($green-dark, .95);
+}
+

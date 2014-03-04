@@ -1,0 +1,35 @@
+.brewer-location-map {
+    margin-top: rhythm(2.1, 16px);
+}
+.brewer-location-map-top {
+    line-height: rhythm(2, 16px);
+    @include container;
+    text-align: left;
+    color: $black;
+    background: rgba($green-white, .25);
+    border-bottom: .1em solid rgba($grey-blue, .5);
+}
+.googlemap {
+    display: block;
+    min-height: rhythm(22, 16px);
+    width: 100%;
+    @include at-breakpoint($break-to-medium) {
+        min-height: rhythm(45, 16px);
+    }
+}
+.member-map-vitals {
+    @extend %list-vitals;
+    margin-top: rhythm(.25, 16px);
+    h4 {
+        margin: rhythm(.25, 16px) 0;
+        line-height: rhythm(1, 16px);
+        font-weight: normal;
+    }
+    p {
+        @include adjust-font-size-to(11px);
+        padding-left: 0;
+    }
+    p:first-of-type {
+        padding: 0 0 rhythm(.25, 16px) 0;
+    }
+}

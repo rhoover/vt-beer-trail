@@ -1,0 +1,35 @@
+.navbar {
+    background: $white;
+    @include background-image(linear-gradient(rgba($green-light, .06), rgba($green-dark, .12) ));
+    border-bottom: .1em solid rgba($grey-blue, .5);
+    color: rgba($black, .85);
+}
+.heading {
+    @include span-columns(8,12);
+    margin: rhythm(.5, 16px) 0;
+    padding-top: rhythm(.2, 16px);
+    @include at-breakpoint($break-to-medium) {
+        @include span-columns(14, 16);
+    }
+    @include adjust-font-size-to(18px);
+    text-align: center;
+}
+.back-button {
+    @include span-columns(2,12);
+    @extend %nav-buttons;
+    margin-right: 0px;
+    margin-left: $grid-padding/4;
+    @include at-breakpoint($break-to-medium) {
+        @include span-columns(1, 16);
+    }
+    @include icon('before', true, 'back');
+}
+.home-button {
+    @include span-columns(2 omega,12);
+    @extend %nav-buttons;
+    margin-right: $grid-padding/4;
+    @include at-breakpoint($break-to-medium) {
+        @include span-columns(1 omega, 16);
+    }
+    @include icon('before', true, 'home');
+}

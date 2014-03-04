@@ -1,44 +1,71 @@
-//Normalize Must Come First
-@import "globals/normalize.2.1.3";
+//Base
+@import "base/compass";
+@import "base/typography";
+@import "base/vertical-rhythm";
 
-//Plug-ins
+// //Plug-ins
 @import "susy";
+@import "base/susy-grid";
 
-//Core
-@import "compass/css3";
-@import "compass/typography/vertical_rhythm";
-@import "compass/css3/font-face";
-@import "compass/css3/box-shadow";
-@import "compass/css3/border-radius";
-@import "compass/utilities/sprites";
-@import "compass/layout";
-@import "compass/css3/transition";
-
-//Globals
-@import "globals/typography";
-@import "globals/colors";
-@import "globals/susy";
-@import "globals/vertical-rhythm";
-@import "globals/mixins";
+//Helpers
+@import "helpers/colors";
+@import "helpers/font-icons";
+@import "helpers/placeholders";
+@import "helpers/mixins";
+@import "helpers/member-sprites";
 
 //Layout
-@import "layout/navbar";
-@import "layout/search";
-@import "layout/container";
-@import "layout/home-list";
-@import "layout/memberview";
-@import "layout/membermap";
-@import "layout/local-list";
-@import "layout/weather";
-@import "layout/business-map";
+@import "layout/nav-bar";
 
-//Design
-@import "design/container";
-@import "design/navbar";
-@import "design/search";
-@import "design/home-list";
-@import "design/memberview";
-@import "design/membermap";
-@import "design/local-list";
-@import "design/weather";
-@import "design/business-map";
+//Components
+@import "components/container";
+@import "components/nav-bar";
+@import "components/search";
+@import "components/member-list";
+@import "components/member-view";
+@import "components/member-map";
+@import "components/local-list";
+@import "components/local-map";
+@import "components/weather";
+
+//Animations
+@import "animations/container-animation";
+
+// //Core
+// @import "compass/css3";
+// @import "compass/typography/vertical_rhythm";
+// @import "compass/css3/font-face";
+// @import "compass/css3/box-shadow";
+// @import "compass/css3/border-radius";
+// @import "compass/utilities/sprites";
+// @import "compass/layout";
+// @import "compass/css3/transition";
+
+// //Globals
+// @import "globals/typography";
+// @import "globals/colors";
+// @import "globals/susy";
+// @import "globals/vertical-rhythm";
+// @import "globals/mixins";
+
+// //Layout
+// @import "layout/navbar";
+// @import "layout/search";
+// @import "layout/container";
+// @import "layout/home-list";
+// @import "layout/memberview";
+// @import "layout/membermap";
+// @import "layout/local-list";
+// @import "layout/weather";
+// @import "layout/business-map";
+
+// //Design
+// @import "design/container";
+// @import "design/navbar";
+// @import "design/search";
+// @import "design/home-list";
+// @import "design/memberview";
+// @import "design/membermap";
+// @import "design/local-list";
+// @import "design/weather";
+// @import "design/business-map";

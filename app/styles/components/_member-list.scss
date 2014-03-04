@@ -1,0 +1,12 @@
+.homelist {
+    @extend %list;
+}
+.brewer-list-item {
+    @extend %list-item;
+}
+.member-img {
+    @extend %list-image;
+}
+.member-list-vitals {
+    @extend %list-vitals;
+}

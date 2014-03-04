@@ -1,0 +1,18 @@
+.business-map-top {
+    @extend %business-list-header;
+    text-align: center;
+}
+.business-phone-top {
+    @include span-columns(12,12);
+    margin: rhythm(2.7, 16px) 0 0 0;
+    &:before {
+        padding-right: $grid-padding/2;
+        @include adjust-font-size-to(25px);
+    }
+    color: $black;
+    text-decoration: none;
+    @include icon('before', true, 'phone');
+}
+.business-name-top {
+    @include adjust-font-size-to(12px);
+}

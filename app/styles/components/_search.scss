@@ -1,4 +1,10 @@
 .membersearch {
+    position: fixed;
+    top: rhythm(2.2, 16px);
+    @include span-columns(12,12);
+    @include at-breakpoint($break-to-medium) {
+        @include span-columns(16,16);
+    }
     background: $white;
     [data-icon]:before {
         content: attr(data-icon);
@@ -13,6 +19,12 @@
     }
 }
 #brewersearch-input {
+    width: 100%;
+    height: rhythm(1.5,16px);
+    padding: 0 0 0 $grid-padding*5;
+    @include at-breakpoint($break-to-medium) {
+        @include pad(2,0);
+    }
     @include adjust-font-size-to(20px);
     @include input-placeholder(rgba($grey-blue, .75));
     background: transparent;
@@ -25,5 +37,13 @@
         @include input-placeholder-focus(transparent);
         outline: 0;
         background: rgba($grey-blue, .10);
+    }
+}
+.search-img-font {
+    @include span-columns(2, 12);
+    text-align: center;
+    margin-top: rhythm(-1.7, 16px);
+    @include at-breakpoint($break-to-medium) {
+        @include span-columns(2, 16);
     }
 }

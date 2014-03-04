@@ -1,9 +1,10 @@
 .business-list-top {
-    color: $black;
-    background: rgba($green-white, .25);
-    border-bottom: .1em solid rgba($grey-blue, .5);
+    @extend %business-list-header;
 }
 .yelp-courtesy {
+    @include span-columns(8,12);
+    margin-top: rhythm(4, 16px);
+    margin-bottom: rhythm(.25, 16px);
     @include adjust-font-size-to(10px);
     color: $black;
 }
@@ -12,31 +13,37 @@
     color: $black;
 }
 .VBA40-yelp {
+    @include span-columns(4 omega,12);
+    margin-top: rhythm(2.35, 16px);
     opacity: .5;
 }
+.local-list {
+    @extend %list;
+    padding-top: rhythm(1,16px);
+}
 .local-list-item {
-    @extend %list-item-design;
+    @extend %list-item;
+    padding-bottom: rhythm(.5, 16px);
+    padding-top: rhythm(.5, 16px);
+}
+.local-list-image {
+    @extend %list-image;
+    height: 65px;
+    width: 65px;
+    margin-top: 0px;
 }
 .local-list-vitals {
-    @extend %list-vitals-design;
+    @extend %list-vitals;
+    padding-top: 0px;
+    p:first-of-type {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
 }
-
 //Courtesy of http://hugogiraudel.com/2014/02/24/star-rating-system-with-sass/
 $yelp-font-size: 11px;
-// $star-width: 1.3em;
 $star-width: $grid-padding*1.5;
 $max-stars: 5;
-
-// body {
-//   padding: 20px;
-//   font-size: $font-size;
-// }
-
-// .rating {
-//   // margin: 10px 0;
-//   font-size: $yelp-font-size;
-// }
-
 .rating i {
   display: inline-block;
   width: 0;
@@ -52,7 +59,6 @@ $max-stars: 5;
   text-indent: -0.46em;
   text-shadow: 1px 0 1px hsl(0, 0%, 70%);
 }
-
 // Revamping the stars-color function
 // To use a list and some logic
 // In order to avoid repeted code
@@ -62,18 +68,15 @@ $max-stars: 5;
     @warn '#{$stars} is not a number for `stars-color`.';
     @return false;
   }
-
   $colors: #cc8b1f #dcb228 #f0991e #f26a2c #dd050b;
   @return if($stars <= length($colors), nth($colors, $stars), #333);
 }
-
 // Main loop, looping through 1 to 4 (instead of 5)
 // 1. Instanciating a list that will be used as a CSS selector
 // 2. Caching the return from stars-color to speed up compilation
 @for $i from 1 to $max-stars {
   $selector: (); // 1
   $color: stars-color($i); // 2
-
   // Inner loop not dumping anything
   // 1. Only appending stuff to $selector
   // 2. Using the [attr^='X'] selector to target both X and X.Y
@@ -85,19 +88,16 @@ $max-stars: 5;
       comma // 3
     );
   }
-
   // Using the concatenated selector
   #{$selector} {
     border-color: $color;
     background: $color;
   }
-
   // For half ratings only, applying color to left border of next star
   [data-rating='#{$i + 0.5}'] .star-#{$i + 1} {
     border-left-color: $color;
   }
 }
-
 // Dealing with 5-stars rating in a very simple way
 // Since there is no 5.5 rating possible
 $color: stars-color($max-stars);
