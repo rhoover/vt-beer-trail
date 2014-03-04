@@ -1,0 +1,9 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    @include at-breakpoint($break-to-medium) {
+        @include pad(1,1);
+    }
+}

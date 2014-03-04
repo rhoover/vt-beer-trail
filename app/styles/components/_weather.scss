@@ -1,4 +1,6 @@
 .weather-attribution {
+    margin-top: rhythm(2.2, 16px);
+    padding: rhythm(.25, 16px) 0;
     background: rgba($green-white, .25);
     border-bottom: .1em solid rgba($grey-blue, .5);
     text-align: center;
@@ -6,21 +8,21 @@
         text-decoration: none;
         color: rgba($black, .65);
         @include adjust-font-size-to(13px);
-        // @include icon('after', true, 'weather');
-        // &:after {
-        //     @include pad(1,0);
-        //     @include adjust-font-size-to(26px);
-        //  }
     }
 }
 .current-weather {
-    text-align: center;
+    @include pad(1,1);
+    padding-top: rhythm(.25, 16px);
     h3 {
         color: rgba($grey-blue, .75);
         @include adjust-font-size-to(14px);
         font-weight: normal;
         border-bottom: .1em solid rgba($grey-blue, .3);
+        &:not(:first-of-type) {
+            margin-top: rhythm(2, 16px);
+        }
     }
+    text-align: center;
 }
 .weather-description {
     text-align: center;

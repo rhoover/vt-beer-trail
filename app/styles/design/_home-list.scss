@@ -1,8 +1,0 @@
-$VBA40-layout: smart;
-$VBA40-sprite-dimensions: true;
-@import "VBA40/*.png";
-@include all-VBA40-sprites;
-
-.brewer-list-item {
-    @extend %list-item-design;
-}

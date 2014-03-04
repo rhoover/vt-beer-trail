@@ -236,11 +236,11 @@ AddDefaultCharset utf-8
 
 # Option 1: rewrite www.example.com → example.com
 
-<IfModule mod_rewrite.c>
-    RewriteCond %{HTTPS} !=on
-    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-    RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
-</IfModule>
+# <IfModule mod_rewrite.c>
+#     RewriteCond %{HTTPS} !=on
+#     RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+#     RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+# </IfModule>
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -249,11 +249,11 @@ AddDefaultCharset utf-8
 # Be aware that the following might not be a good idea if you use "real"
 # subdomains for certain parts of your website.
 
-# <IfModule mod_rewrite.c>
-#    RewriteCond %{HTTPS} !=on
-#    RewriteCond %{HTTP_HOST} !^www\..+$ [NC]
-#    RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-# </IfModule>
+<IfModule mod_rewrite.c>
+   RewriteCond %{HTTPS} !=on
+   RewriteCond %{HTTP_HOST} !^www\..+$ [NC]
+   RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
 
 
 # ##############################################################################
@@ -446,12 +446,12 @@ FileETag None
     ExpiresByType text/css                              "access plus 1 year"
 
   # Data interchange
-    ExpiresByType application/json                      "access plus 0 seconds"
-    ExpiresByType application/xml                       "access plus 0 seconds"
+    ExpiresByType application/json                      "access plus 1 month"
+    ExpiresByType application/xml                       "access plus 1 month"
     ExpiresByType text/xml                              "access plus 0 seconds"
 
   # Favicon (cannot be renamed!)
-    ExpiresByType image/x-icon                          "access plus 1 week"
+    ExpiresByType image/x-icon                          "access plus 1 year"
 
   # HTML components (HTCs)
     ExpiresByType text/x-component                      "access plus 1 month"
@@ -460,7 +460,7 @@ FileETag None
     ExpiresByType text/html                             "access plus 0 seconds"
 
   # JavaScript
-    ExpiresByType application/javascript                "access plus 1 year"
+    ExpiresByType application/javascript                "access plus 1 month"
 
   # Manifest files
     ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
