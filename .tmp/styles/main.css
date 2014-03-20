@@ -209,8 +209,8 @@ html {
   clear: both;
 }
 
-.VBA40-sprite, .VBA40-alchemist, .VBA40-backacrebeer, .VBA40-bobcat, .VBA40-coveredbridge, .VBA40-cropbistro, .VBA40-dropin, .VBA40-fiddlehead, .VBA40-foleybrothers, .VBA40-fourteenthstar, .VBA40-gratefulhands, .VBA40-harpoon, .VBA40-hillfarmstead, .VBA40-kingdombrewing, .VBA40-lawsons, .VBA40-longtrail, .VBA40-lostnationbrewing, .VBA40-madison, .VBA40-magichat, .VBA40-mcneills, .VBA40-northshire, .VBA40-norwichinn, .VBA40-ottercreek, .VBA40-perfectpear, .VBA40-rockart, .VBA40-switchback, .VBA40-threeneeds, .VBA40-trappfamily, .VBA40-troutriver, .VBA40-vpb, .VBA40-whetstonestation, .VBA40-yelp, .VBA40-zerogravity {
-  background: url('/images/generated/VBA40-s760509856f.png') no-repeat;
+.VBA40-sprite, .VBA40-alchemist, .VBA40-backacrebeer, .VBA40-bobcat, .VBA40-coveredbridge, .VBA40-cropbistro, .VBA40-dropin, .VBA40-fiddlehead, .VBA40-foleybrothers, .VBA40-fourteenthstar, .VBA40-gratefulhands, .VBA40-harpoon, .VBA40-hillfarmstead, .VBA40-kingdombrewing, .VBA40-lawsons, .VBA40-longtrail, .VBA40-lostnationbrewing, .VBA40-madison, .VBA40-magichat, .VBA40-mcneills, .VBA40-northshire, .VBA40-norwichinn, .VBA40-ottercreek, .VBA40-perfectpear, .VBA40-rockart, .VBA40-switchback, .VBA40-threeneeds, .VBA40-trappfamily, .VBA40-troutriver, .VBA40-vba, .VBA40-vpb, .VBA40-whetstonestation, .VBA40-yelp, .VBA40-zerogravity {
+  background: url('/images/generated/VBA40-sdf52ba1838.png') no-repeat;
 }
 
 .VBA40-alchemist {
@@ -256,7 +256,7 @@ html {
 }
 
 .VBA40-foleybrothers {
-  background-position: 0 -983px;
+  background-position: 0 -1063px;
   height: 40px;
   width: 40px;
 }
@@ -304,7 +304,7 @@ html {
 }
 
 .VBA40-lostnationbrewing {
-  background-position: 0 -1183px;
+  background-position: 0 -1223px;
   height: 46px;
   width: 40px;
 }
@@ -322,7 +322,7 @@ html {
 }
 
 .VBA40-mcneills {
-  background-position: 0 -1229px;
+  background-position: 0 -1269px;
   height: 53px;
   width: 40px;
 }
@@ -340,7 +340,7 @@ html {
 }
 
 .VBA40-ottercreek {
-  background-position: 0 -1063px;
+  background-position: 0 -1103px;
   height: 40px;
   width: 39px;
 }
@@ -352,7 +352,7 @@ html {
 }
 
 .VBA40-rockart {
-  background-position: 0 -1143px;
+  background-position: 0 -1183px;
   height: 40px;
   width: 34px;
 }
@@ -364,7 +364,7 @@ html {
 }
 
 .VBA40-threeneeds {
-  background-position: 0 -1023px;
+  background-position: 0 -983px;
   height: 40px;
   width: 40px;
 }
@@ -376,9 +376,15 @@ html {
 }
 
 .VBA40-troutriver {
-  background-position: 0 -1103px;
+  background-position: 0 -1143px;
   height: 40px;
   width: 35px;
+}
+
+.VBA40-vba {
+  background-position: 0 -1023px;
+  height: 40px;
+  width: 40px;
 }
 
 .VBA40-vpb {
@@ -448,6 +454,7 @@ html {
     width: 87.34177%;
     float: left;
     margin-right: 1.26582%;
+    margin: 0.75em 0;
   }
 }
 

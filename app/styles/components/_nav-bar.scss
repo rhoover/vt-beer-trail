@@ -10,6 +10,7 @@
     padding-top: rhythm(.2, 16px);
     @include at-breakpoint($break-to-medium) {
         @include span-columns(14, 16);
+        margin: rhythm(.5, 16px) 0;
     }
     @include adjust-font-size-to(18px);
     text-align: center;

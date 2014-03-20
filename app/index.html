@@ -8,7 +8,7 @@
 
         <!-- Devices -->
         <meta charset="utf-8"/>
-        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 
         <!-- For Chrome for Android Add To Homescreen-->
@@ -100,6 +100,13 @@
                     </section>
 
                     <section class="homelist">
+                        <a class="brewer-list-item" ng-href="#/allmembermap">
+                            <span class="member-img VBA40-vba"></span>
+                            <div class="member-list-vitals">
+                                <p>All Member Map</p>
+                                <p>One Handy Resource</p>
+                            </div>
+                        </a>
                         <a class="brewer-list-item" ng-href="#/{{member.selector}}" ng-repeat="member in memberList  | filter:memberSearch" >
                             <span class="member-img VBA40-{{member.selector}}"></span>
                             <div class="member-list-vitals">
@@ -109,6 +116,24 @@
                         </a>
                     </section>
 
+                </article> <!-- /.article -->
+            </script>
+
+            <!--++++++++++
+
+             All Member Map
+
+             ++++++++++-->
+            <script type="text/ng-template" id="allmembermap.html">
+                <article ng-controller="AllmemberMapCtrl" class="brewer-location-map">
+                    <address class="brewer-location-map-top">
+                            <span class="member-img VBA40-vba"></span>
+                            <section class="member-map-vitals">
+                                <h4>All Member Map</h4>
+                                <p>One Handy Vermont Craft Beer Resource</p>
+                            </section>
+                    </address>
+                    <section class="googlemap" all-member-map></section>
                 </article> <!-- /.article -->
             </script>
 
@@ -147,7 +172,7 @@
                                 <p>{{member.address}}, {{member.city}}</p>
                             </section>
                     </address>
-                    <section class="googlemap" member-map="{{member.latitude}},{{member.longitude}}"></section>
+                    <section class="googlemap" member-map></section>
                 </article> <!-- /.article -->
             </script>
 
@@ -319,6 +344,8 @@
             <script src="scripts/directives/backbutton.js"></script>
             <script src="scripts/directives/membermap.js"></script>
             <script src="scripts/directives/businessmap.js"></script>
+        <script src="scripts/controllers/allmembermap.js"></script>
+        <script src="scripts/directives/allmembermap.js"></script>
         <!-- endbuild -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID _gaq.push(['_trackPageview']); -->

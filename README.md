@@ -16,7 +16,7 @@ Tools
 * [Compass](http://compass-style.org/)
 * [Susy](http://susy.oddbird.net/)
 
-To Do for version 1.*
+To Do for version 1.2
 ---------------------
 
 * Fix Scroll Position bug on local business map view (exists for Chrome on Android, don't know about Safari/iOS)
@@ -26,5 +26,7 @@ To Do for version 1.*
 * (__DONE__) Improve Google Analytics to track and report on URL changes
 * Track client-side load times
 * Would app-cache be worth it considering the far-future cacheing configurations in .htaccess
-* Re-Factor CSS
+* (__DONE__)  Re-Factor CSS
+* (__DONE__)  Added All Members Map
+*(__DONE__)  Re-Factored Member Map
 * Head up to Morrisville to buy a growler of Petit Ardennes from Lost Nation

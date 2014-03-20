@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('beerTrailApp')
-    .directive('businessMap', ['$window', function ($window) {
+    .directive('businessMap', [function () {
 
         return {
             restrict: 'A',
@@ -49,5 +49,5 @@ angular.module('beerTrailApp')
                 }); //end observe
             } //end link function
         }; //end return
-        analytics.logPageLoad($scope, $location.absUrl(), $location.path());
+        // analytics.logPageLoad($scope, $location.absUrl(), $location.path());
     }]);

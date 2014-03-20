@@ -6,6 +6,9 @@ angular.module('beerTrailApp', ['ngRoute', 'ngAnimate']) //, 'ngTouch'
             .when('/', {
                 templateUrl: 'home.html'
             })
+            .when('/allmembermap', {
+                templateUrl: 'allmembermap.html'
+            })
             .when('/:selector', {
                 templateUrl: 'memberview.html'
             })

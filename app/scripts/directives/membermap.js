@@ -1,19 +1,21 @@
 'use strict';
 
 angular.module('beerTrailApp')
-    .directive('memberMap', ['$window', function ($window) {
+    .directive('memberMap', [function () {
 
         return {
             restrict: 'A',
             link: function (scope, element, attrs) {
 
-                attrs.$observe('memberMap', function () {
+                // attrs.$observe('memberMap', function () {
 
                         //Massage Data
-                        var latitude = attrs.memberMap.split(',')[0];
-                        var longitude = attrs.memberMap.split(',')[1];
-                        var lat = parseFloat(latitude);
-                        var lon = parseFloat(longitude);
+                        // var latitude = attrs.memberMap.split(',')[0];
+                        // var longitude = attrs.memberMap.split(',')[1];
+                        // var lat = parseFloat(latitude);
+                        // var lon = parseFloat(longitude);
+                        var lat = scope.member.latitude;
+                        var lon = scope.member.longitude;
 
                         //Map Stuff
                         var myMapOptions, map, marker;
@@ -37,8 +39,20 @@ angular.module('beerTrailApp')
                             map: map
                         });
 
-                }); //end observe
+                        var infoContent = '<p>'+scope.member.name+'</p>'+
+                        '<p>'+scope.member.address+'</p>'+
+                        '<p>'+scope.member.city+', '+scope.member.state+'</p>';
+
+                        var infowindow = new google.maps.InfoWindow({
+                            content: infoContent
+                        });
+
+                        google.maps.event.addListener(marker, 'click', function () {
+                            infowindow.open(map, marker);
+                        });
+
+                // }); //end observe
             } //end link function
         }; //end return
-        analytics.logPageLoad($scope, $location.absUrl(), $location.path());
+        // analytics.logPageLoad($scope, $location.absUrl(), $location.path());
     }]);
