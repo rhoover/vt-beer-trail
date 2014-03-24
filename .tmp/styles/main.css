@@ -973,6 +973,12 @@ html {
   line-height: 1.84615em;
 }
 
+.skycons {
+  height: 64px;
+  width: 114px;
+  margin: 0.75em 0 0.45em 0;
+}
+
 .current-weather {
   padding-left: 8.47458%;
   padding-right: 8.47458%;

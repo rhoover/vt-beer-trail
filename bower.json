@@ -10,9 +10,5 @@
     "angular-animate": "1.2.15-build.2364+sha.7c34e1f",
     "angular-route": "1.2.15-build.2364+sha.7c34e1f",
     "fastclick": "1.0.0"
-  },
-  "resolutions": {
-    "angular": "1.2.15-build.2364+sha.7c34e1f",
-    "angular-scenario": "1.2.15-build.2364+sha.7c34e1f"
   }
 }

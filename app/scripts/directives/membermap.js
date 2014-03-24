@@ -18,7 +18,7 @@ angular.module('beerTrailApp')
                         var lon = scope.member.longitude;
 
                         //Map Stuff
-                        var myMapOptions, map, marker;
+                        var myMapOptions, map, marker, infoContent, infowindow;
 
                         myMapOptions = {
                             zoom: 10,
@@ -27,7 +27,7 @@ angular.module('beerTrailApp')
                             mapTypeControlOptions: {
                                 style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
                             },
-                            zoomControl: false,
+                            zoomControl: true,
                             streetViewControl: false,
                             mapTypeId: google.maps.MapTypeId.ROADMAP
                         };
@@ -39,11 +39,11 @@ angular.module('beerTrailApp')
                             map: map
                         });
 
-                        var infoContent = '<p>'+scope.member.name+'</p>'+
+                        infoContent = '<p>'+scope.member.name+'</p>'+
                         '<p>'+scope.member.address+'</p>'+
                         '<p>'+scope.member.city+', '+scope.member.state+'</p>';
 
-                        var infowindow = new google.maps.InfoWindow({
+                        infowindow = new google.maps.InfoWindow({
                             content: infoContent
                         });
 

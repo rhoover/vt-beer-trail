@@ -293,7 +293,8 @@
                 </section>
                 <section class="current-weather" ng-if="!loading">
                     <h3>{{member.city}}, {{member.state}}</h3>
-                    <p id="{{weatherInfo.currently.icon}}" class="weather-description">{{weatherInfo.currently.summary}}: <span class="temperature">{{roundedTemp}}&#176;</span></p>
+                    <canvas rh-skycons="{{weatherInfo.currently.icon}}" class="skycons"></canvas>
+                    <p  class="weather-description">{{weatherInfo.currently.summary}}: <span class="temperature">{{roundedTemp}}&#176;</span></p>
                     <p class="weather-description">Feels Like: <span class="temperature">{{roundedApparentTemp}}&#176;</span></p>
                     <p class="weather-description">Chance of Precipitation: {{precipPredict}}%</p>
                     <h3>Forecast: Next Hour</h3>
@@ -308,7 +309,11 @@
 
         </main> <!-- /main.container -->
 
+        <!-- build:js scripts/third-party.js-->
         <script src="bower_components/fastclick/lib/fastclick.js"></script>
+        <script src="bower_components/skycons/skycons.js"></script>
+        <!-- endbuild -->
+
         <script src="bower_components/angular/angular.js"></script>
         <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 
@@ -334,6 +339,7 @@
             <script src="scripts/controllers/beertrail-main.js"></script>
             <script src="scripts/controllers/home.js"></script>
             <script src="scripts/controllers/memberview.js"></script>
+            <script src="scripts/controllers/allmembermap.js"></script>
             <script src="scripts/controllers/membermap.js"></script>
             <script src="scripts/controllers/shoppinglist.js"></script>
             <script src="scripts/controllers/dininglist.js"></script>
@@ -344,8 +350,8 @@
             <script src="scripts/directives/backbutton.js"></script>
             <script src="scripts/directives/membermap.js"></script>
             <script src="scripts/directives/businessmap.js"></script>
-        <script src="scripts/controllers/allmembermap.js"></script>
-        <script src="scripts/directives/allmembermap.js"></script>
+            <script src="scripts/directives/allmembermap.js"></script>
+            <script src="scripts/directives/rh-skycons.js"></script>
         <!-- endbuild -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID _gaq.push(['_trackPageview']); -->

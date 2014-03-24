@@ -7,7 +7,7 @@ angular.module('beerTrailApp')
             link: function (scope, element, attrs) {
 
                 //Map Stuff
-                var myMapOptions, map;
+                var myMapOptions, map, marker, i;
 
                 myMapOptions = {
                     zoom: 7,
@@ -16,13 +16,12 @@ angular.module('beerTrailApp')
                     mapTypeControlOptions: {
                         style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
                     },
-                    zoomControl: false,
+                    zoomControl: true,
                     streetViewControl: false,
                     mapTypeId: google.maps.MapTypeId.ROADMAP
                 };
 
                 map = new google.maps.Map(element[0], myMapOptions);
-                var marker, i;
 
                 for (i=0; i < scope.members.length; i++) {
 
@@ -41,8 +40,8 @@ angular.module('beerTrailApp')
                     '<p>'+memberLocation.city+', '+memberLocation.state+'</p>';
 
                     //Notice closure pattern, necessary for map with multiple markers
-                    google.maps.event.addListener(marker, 'click', (function(marker, infoContent) {
-                        return function() {
+                    google.maps.event.addListener(marker, 'click', (function (marker, infoContent) {
+                        return function () {
                             infowindow.setContent(infoContent);
                             infowindow.open(map, marker);
                         }

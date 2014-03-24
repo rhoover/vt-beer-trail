@@ -10,6 +10,11 @@
         @include adjust-font-size-to(13px);
     }
 }
+.skycons {
+    height: 64px;
+    width: 114px;
+    margin: rhythm(.5, 16px) 0 rhythm(.3, 16px) 0;
+}
 .current-weather {
     @include pad(1,1);
     padding-top: rhythm(.25, 16px);

@@ -34,15 +34,10 @@ angular.module('beerTrailApp')
                 //publish
                 $scope.weatherInfo = weatherCache;
 
-                var heat = weatherCache.currently.temperature;
-                var apparentHeat = weatherCache.currently.apparentTemperature;
-                var maxHeat = weatherCache.daily.data[2].temperatureMax;
-                var precipPredict = weatherCache.currently.precipProbability*100;
-
-                $scope.roundedTemp = Math.round(heat);
-                $scope.roundedApparentTemp = Math.round(apparentHeat);
-                $scope.roundedMaxTemp = Math.round(maxHeat);
-                $scope.precipPredict = precipPredict;
+                $scope.roundedTemp = Math.round(weatherCache.currently.temperature);
+                $scope.roundedApparentTemp = Math.round(weatherCache.currently.apparentTemperature);
+                $scope.roundedMaxTemp = Math.round(weatherCache.daily.data[2].temperatureMax);
+                $scope.precipPredict = weatherCache.currently.precipProbability*100;
 
                 $scope.$emit('LOADED');
             } else {
@@ -52,15 +47,10 @@ angular.module('beerTrailApp')
                         //and publish
                         $scope.weatherInfo = weatherData;
 
-                        var heat = weatherData.currently.temperature;
-                        var apparentHeat = weatherData.currently.apparentTemperature;
-                        var maxHeat = weatherData.daily.data[2].temperatureMax;
-                        var precipPredict = weatherData.currently.precipProbability*100;
-
-                        $scope.roundedTemp = Math.round(heat);
-                        $scope.roundedApparentTemp = Math.round(apparentHeat);
-                        $scope.roundedMaxTemp = Math.round(maxHeat);
-                        $scope.precipPredict = precipPredict;
+                        $scope.roundedTemp = Math.round(weatherData.currently.temperature);
+                        $scope.roundedApparentTemp = Math.round(weatherData.currently.apparentTemperature);
+                        $scope.roundedMaxTemp = Math.round(weatherData.daily.data[2].temperatureMax);
+                        $scope.precipPredict = weatherData.currently.precipProbability*100;
 
                         $scope.$emit('LOADED');
 
