@@ -23,6 +23,7 @@ angular.module('beerTrailApp')
 
                 // var member = ($filter('filter')(data, {selector: $routeParams.selector}))[0];
                 // $scope.member = member;View
+                var memberSelector = {selector: $routeParams.selector};
                 $scope.member = appdataFilter.member(data, memberSelector);
 
                 $scope.$emit('LOADED');

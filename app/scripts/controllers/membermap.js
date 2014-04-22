@@ -7,8 +7,8 @@ angular.module('beerTrailApp')
 
         //see if we have been here before
         var membershipCache = storageService.get('vba-membership-cache');
-        if (membershipCache != null) {
 
+        if (membershipCache != null) {
             var memberSelector = {selector: $routeParams.selector};
 
             //pass off the heavy lifting to the filter

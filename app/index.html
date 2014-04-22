@@ -8,7 +8,7 @@
 
         <!-- Devices -->
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 
         <!-- For Chrome for Android Add To Homescreen-->
@@ -80,7 +80,7 @@
                 <a class="home-button" href="/" ></a>
             </nav>
 
-        <main class="container" ng-view>
+        <main class="container" ng-view></main> <!-- /main.container -->
 
             <!--++++++++++
 
@@ -107,7 +107,7 @@
                                 <p>One Handy Resource</p>
                             </div>
                         </a>
-                        <a class="brewer-list-item" ng-href="#/{{member.selector}}" ng-repeat="member in memberList  | filter:memberSearch" >
+                        <a class="brewer-list-item" ng-href="#/{{member.selector}}" ng-repeat="member in memberList  track by member.id | filter:memberSearch" >
                             <span class="member-img VBA40-{{member.selector}}"></span>
                             <div class="member-list-vitals">
                                 <p>{{member.name}}</p>
@@ -191,7 +191,7 @@
                         <div class="spinning"></div>
                     </section>
                     <section class="local-list">
-                        <a ng-href="#/{{member.selector}}/shoppinglist/{{shopping.id}}" class="local-list-item"  ng-repeat="shopping in shoppingList | orderBy: '+name' " >
+                        <a ng-href="#/{{member.selector}}/shoppinglist/{{shopping.id}}" class="local-list-item"  ng-repeat="shopping in shoppingList track by shopping.id| orderBy: '+name' " >
                             <img class="local-list-image" ng-src="{{shopping.photo_url}}" />
                             <div class="local-list-vitals">
                                 <p>{{shopping.name}}</p>
@@ -242,7 +242,7 @@
                         <div class="spinning"></div>
                     </section>
                     <section class="local-list">
-                        <a ng-href="#/{{member.selector}}/dininglist/{{dining.id}}" class="local-list-item"  ng-repeat="dining in diningList | orderBy:  '+name' ">
+                        <a ng-href="#/{{member.selector}}/dininglist/{{dining.id}}" class="local-list-item"  ng-repeat="dining in diningList dining.id| orderBy:  '+name' ">
                             <img class="local-list-image" ng-src="{{dining.photo_url}}" />
                             <div class="local-list-vitals">
                                 <p>{{dining.name}}</p>
@@ -307,7 +307,7 @@
         </script>
 
 
-        </main> <!-- /main.container -->
+
 
         <!-- build:js scripts/third-party.js-->
         <script src="bower_components/fastclick/lib/fastclick.js"></script>
