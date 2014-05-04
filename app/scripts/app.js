@@ -1,13 +1,14 @@
 'use strict';
 
 angular.module('beerTrailApp', ['ngRoute', 'ngAnimate']) //, 'ngTouch'
-    .config(['$routeProvider', function ($routeProvider) {
+    .config(['$routeProvider',  function ($routeProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: 'home.html'
             })
             .when('/allmembermap', {
-                templateUrl: 'allmembermap.html'
+                templateUrl: 'allmembermap.html',
+                controller: 'AllmemberMapCtrl'
             })
             .when('/:selector', {
                 templateUrl: 'memberview.html'
@@ -34,6 +35,9 @@ angular.module('beerTrailApp', ['ngRoute', 'ngAnimate']) //, 'ngTouch'
                 redirectTo: '/'
             });
     }])
-    .run(function () {
-        FastClick.attach(document.body);
-    });
+    .run(['$window', function ($window) {
+        $window.FastClick.attach($window.document.body);
+    }]);
+    // .run(function () {
+    //     FastClick.attach(document.body);
+    // });

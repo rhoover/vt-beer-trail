@@ -14,6 +14,7 @@ angular.module('beerTrailApp')
                         // var longitude = attrs.memberMap.split(',')[1];
                         // var lat = parseFloat(latitude);
                         // var lon = parseFloat(longitude);
+
                         var lat = scope.member.latitude;
                         var lon = scope.member.longitude;
 

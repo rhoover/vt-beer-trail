@@ -125,7 +125,8 @@
 
              ++++++++++-->
             <script type="text/ng-template" id="allmembermap.html">
-                <article ng-controller="AllmemberMapCtrl" class="brewer-location-map">
+                <!-- ng-controller="AllmemberMapCtrl" -->
+                <article class="brewer-location-map">
                     <address class="brewer-location-map-top">
                             <span class="member-img VBA40-vba"></span>
                             <section class="member-map-vitals">
@@ -172,7 +173,7 @@
                                 <p>{{member.address}}, {{member.city}}</p>
                             </section>
                     </address>
-                    <section class="googlemap" member-map></section>
+                    <section class="googlemap" member-map test="{{member.latitude}}"></section>
                 </article> <!-- /.article -->
             </script>
 
@@ -197,7 +198,6 @@
                                 <p>{{shopping.name}}</p>
                                 <p>{{shopping.address1}}</p>
                                 <p>{{shopping.city}}, {{shopping.state}}, {{shopping.zip}}</p>
-<!--                           <img ng-src="{{shopping.rating_img_url_small}}" /> -from {{shopping.review_count}} Reviews(s) -->
                                 <p class="rating" data-rating="{{shopping.avg_rating}}">
                                     <i class="star-1">★</i>
                                     <i class="star-2">★</i>
@@ -248,7 +248,6 @@
                                 <p>{{dining.name}}</p>
                                 <p>{{dining.address1}}</p>
                                 <p>{{dining.city}}, {{dining.state}}, {{dining.zip}}</p>
-                                <!-- <p><img ng-src="{{dining.rating_img_url_small}}" /> -from {{dining.review_count}} Reviews(s)</p> -->
                                 <p class="rating" data-rating="{{dining.avg_rating}}">
                                     <i class="star-1">★</i>
                                     <i class="star-2">★</i>
