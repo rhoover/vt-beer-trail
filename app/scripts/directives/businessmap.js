@@ -5,7 +5,8 @@ angular.module('beerTrailApp')
 
         return {
             restrict: 'A',
-            link: function (scope, element, attrs) {
+            compile: function (tElement, tAttributes, transclude) {
+                return function (scope, element, attrs) {
 
                     //Massage Data
                     var latitude = attrs.businessMap.split(',')[0];
@@ -28,7 +29,7 @@ angular.module('beerTrailApp')
                     infowindow = googleMap.infoWindowCreator(infoContent);
 
                     googleMap.infoWindowClick(map, marker, infowindow);
-
-            } //end link function
+                } //end return function
+            } //end compile
         }; //end return
     }]);
