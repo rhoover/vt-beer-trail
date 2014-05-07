@@ -1,53 +1,34 @@
 'use strict';
 
 angular.module('beerTrailApp')
-    .directive('allMemberMap', [function () {
+    .directive('allMemberMap', ['googleMap', function (googleMap) {
         return {
             restrict: 'A',
             link: function (scope, element, attrs) {
 
                 //Map Stuff
-                var myMapOptions, map, marker, i;
+                var myMapOptions, map, marker, infoContent, infowindow, i;
+                var div = element[0];
 
-                myMapOptions = {
-                    zoom: 7,
-                    center: new google.maps.LatLng(44.0407,-72.7093),
-                    mapTypeControl: true,
-                    mapTypeControlOptions: {
-                        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
-                    },
-                    zoomControl: true,
-                    streetViewControl: false,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                };
+                myMapOptions = googleMap.mapOptions(7, 44.0407, -72.7093);
 
-                map = new google.maps.Map(element[0], myMapOptions);
+                map= googleMap.mapCreator(div, myMapOptions);
 
                 for (i=0; i < scope.members.length; i++) {
 
-                    var memberLocation = scope.members[i];
-                    var pointer = new google.maps.LatLng(memberLocation.latitude, memberLocation.longitude);
-                    var infowindow = new google.maps.InfoWindow();
+                    var ml = scope.members[i];
 
-                    marker = new google.maps.Marker({
-                        position: pointer,
-                        map: map,
-                        title: memberLocation.name
-                    });
+                    marker = googleMap.mapMarker(map, ml.latitude, ml.longitude);
 
-                    var infoContent = '<p>'+memberLocation.name+'</p>'+
-                    '<p>'+memberLocation.address+'</p>'+
-                    '<p>'+memberLocation.city+', '+memberLocation.state+'</p>';
+                    infoContent = '<p>'+ml.name+'</p>'+
+                    '<p>'+ml.address+'</p>'+
+                    '<p>'+ml.city+', '+ml.state+'</p>';
 
-                    //Notice closure pattern, necessary for map with multiple markers
-                    google.maps.event.addListener(marker, 'click', (function (marker, infoContent) {
-                        return function () {
-                            infowindow.setContent(infoContent);
-                            infowindow.open(map, marker);
-                        }
-                    })(marker, infoContent));
+                    infowindow = googleMap.infoWindowCreator(infoContent);
 
-                } //end for
-            } //end link
+                    googleMap.infoWindowsClick(map, marker, infowindow, infoContent);
+
+                } //end for loop
+            } //end link function
         } //end return
     }]);

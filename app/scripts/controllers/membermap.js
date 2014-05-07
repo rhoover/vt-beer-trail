@@ -18,6 +18,7 @@ angular.module('beerTrailApp')
             $scope.member = member;
 
             $scope.$emit('LOADED');
+
         } else {
 
             //below pattern is for a service that returns a promise

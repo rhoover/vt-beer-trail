@@ -173,7 +173,7 @@
                                 <p>{{member.address}}, {{member.city}}</p>
                             </section>
                     </address>
-                    <section class="googlemap" member-map test="{{member.latitude}}"></section>
+                    <section class="googlemap" member-map></section>
                 </article> <!-- /.article -->
             </script>
 
@@ -192,7 +192,7 @@
                         <div class="spinning"></div>
                     </section>
                     <section class="local-list">
-                        <a ng-href="#/{{member.selector}}/shoppinglist/{{shopping.id}}" class="local-list-item"  ng-repeat="shopping in shoppingList track by shopping.id| orderBy: '+name' " >
+                        <a ng-href="#/{{member.selector}}/shoppinglist/{{shopping.id}}" class="local-list-item"  ng-repeat="shopping in shoppingList | orderBy: '+name' " >
                             <img class="local-list-image" ng-src="{{shopping.photo_url}}" />
                             <div class="local-list-vitals">
                                 <p>{{shopping.name}}</p>
@@ -242,7 +242,7 @@
                         <div class="spinning"></div>
                     </section>
                     <section class="local-list">
-                        <a ng-href="#/{{member.selector}}/dininglist/{{dining.id}}" class="local-list-item"  ng-repeat="dining in diningList dining.id| orderBy:  '+name' ">
+                        <a ng-href="#/{{member.selector}}/dininglist/{{dining.id}}" class="local-list-item"  ng-repeat="dining in diningList | orderBy:  '+name' ">
                             <img class="local-list-image" ng-src="{{dining.photo_url}}" />
                             <div class="local-list-vitals">
                                 <p>{{dining.name}}</p>
@@ -332,6 +332,7 @@
             <script src="scripts/services/diningservice.js"></script>
             <script src="scripts/services/shoppingservice.js"></script>
             <script src="scripts/services/weatherservice.js"></script>
+            <script src="scripts/services/googlemap.js"></script>
 
             <script src="scripts/filters/appdatafilter.js"></script>
 
@@ -353,7 +354,7 @@
             <script src="scripts/directives/rh-skycons.js"></script>
         <!-- endbuild -->
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID _gaq.push(['_trackPageview']); -->
+        <!-- Google Analytics -->
         <script>
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-40551995-2']);

@@ -1,59 +1,33 @@
 'use strict';
 
 angular.module('beerTrailApp')
-    .directive('memberMap', [function () {
+    .directive('memberMap', ['googleMap', function (googleMap) {
 
         return {
             restrict: 'A',
             link: function (scope, element, attrs) {
 
-                // attrs.$observe('memberMap', function () {
+                var lat = scope.member.latitude;
+                var lon = scope.member.longitude;
 
-                        //Massage Data
-                        // var latitude = attrs.memberMap.split(',')[0];
-                        // var longitude = attrs.memberMap.split(',')[1];
-                        // var lat = parseFloat(latitude);
-                        // var lon = parseFloat(longitude);
+                //Map Stuff
+                var myMapOptions, map, marker, infoContent, infowindow;
+                var div = element[0];
 
-                        var lat = scope.member.latitude;
-                        var lon = scope.member.longitude;
+                myMapOptions = googleMap.mapOptions(10, lat, lon);
 
-                        //Map Stuff
-                        var myMapOptions, map, marker, infoContent, infowindow;
+                map= googleMap.mapCreator(div, myMapOptions);
 
-                        myMapOptions = {
-                            zoom: 10,
-                            center: new google.maps.LatLng(lat, lon),
-                            mapTypeControl: true,
-                            mapTypeControlOptions: {
-                                style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
-                            },
-                            zoomControl: true,
-                            streetViewControl: false,
-                            mapTypeId: google.maps.MapTypeId.ROADMAP
-                        };
+                marker = googleMap.mapMarker(map, lat, lon);
 
-                        map = new google.maps.Map(element[0], myMapOptions);
+                infoContent = '<p>'+scope.member.name+'</p>'+
+                '<p>'+scope.member.address+'</p>'+
+                '<p>'+scope.member.city+', '+scope.member.state+'</p>';
 
-                        marker = new google.maps.Marker ({
-                            position: new google.maps.LatLng(lat, lon),
-                            map: map
-                        });
+                infowindow = googleMap.infoWindowCreator(infoContent);
 
-                        infoContent = '<p>'+scope.member.name+'</p>'+
-                        '<p>'+scope.member.address+'</p>'+
-                        '<p>'+scope.member.city+', '+scope.member.state+'</p>';
+                googleMap.infoWindowClick(map, marker, infowindow);
 
-                        infowindow = new google.maps.InfoWindow({
-                            content: infoContent
-                        });
-
-                        google.maps.event.addListener(marker, 'click', function () {
-                            infowindow.open(map, marker);
-                        });
-
-                // }); //end observe
             } //end link function
         }; //end return
-        // analytics.logPageLoad($scope, $location.absUrl(), $location.path());
     }]);
